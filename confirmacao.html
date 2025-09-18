@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swift+ | Confirmação</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Topbar fixa -->
+<header class="topbar">
+  <div class="logo">Swift+</div>
+  <nav class="menu">
+    <a href="index.html">🏠 Início</a>
+    <a href="categorias.html">📂 Categorias</a>
+    <a href="pedido.html">📦 Pedido</a>
+    <a href="carrinho.html">🛍️ Carrinho</a>
+    <a href="perfil.html">👤 Perfil</a>
+    <a href="receitas.html">🍴 Receitas</a>
+    <a href="cupons.html">🎟️ Cupons</a>
+    <a href="lojas.html">📍 Lojas</a>
+    <a href="faq.html">❓ FAQ</a>
+  </nav>
+</header>
+
+  <!-- Conteúdo da confirmação -->
+  <main class="confirmacao">
+    <h1>✅ Pedido Confirmado!</h1>
+    <p>Obrigado por comprar com a Swift+. Seu pedido foi registrado com sucesso.</p>
+
+    <!-- QR Code -->
+    <div class="qrcode">
+      <img src="assets/img/qrcode.png" alt="QR Code Retirada">
+      <p>Use este QR Code para retirar seu pedido na loja.</p>
+    </div>
+
+    <!-- Informações do pedido -->
+    <section class="pedido-info">
+      <h2>📦 Pedido #231</h2>
+      <p>Status: <span class="status">Pronto para retirada</span></p>
+      <ul>
+        <li>Bife de Chorizo Swift Gran Reserva — 1 un — R$ 85,90</li>
+        <li>Frango Temperado Swift — 2 un — R$ 37,98</li>
+      </ul>
+      <p class="total">Total pago: <strong>R$ 139,75</strong></p>
+    </section>
+
+    <!-- Botões -->
+    <div class="acoes">
+      <button onclick="window.location.href='pedido.html'">Acompanhar Pedido</button>
+      <button class="secundario" onclick="window.location.href='index.html'">Voltar à Home</button>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <p>© 2025 Swift+ Personal Shopper | <a href="#">FAQ</a> | <a href="#">Política de Privacidade</a></p>
+  </footer>
+</body>
+</html>

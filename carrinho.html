@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swift+ | Carrinho</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Topbar fixa -->
+<header class="topbar">
+  <div class="logo">Swift+</div>
+  <nav class="menu">
+    <a href="index.html">🏠 Início</a>
+    <a href="categorias.html">📂 Categorias</a>
+    <a href="pedido.html">📦 Pedido</a>
+    <a href="carrinho.html">🛍️ Carrinho</a>
+    <a href="perfil.html">👤 Perfil</a>
+    <a href="receitas.html">🍴 Receitas</a>
+    <a href="cupons.html">🎟️ Cupons</a>
+    <a href="lojas.html">📍 Lojas</a>
+    <a href="faq.html">❓ FAQ</a>
+  </nav>
+</header>
+
+  <!-- Conteúdo do Carrinho -->
+  <main class="carrinho">
+    <h1>🛒 Seu Carrinho</h1>
+
+    <!-- Itens do carrinho -->
+    <div class="carrinho-itens">
+      <div class="item">
+        <img src="assets/img/chorizo.jpg" alt="Bife de Chorizo">
+        <div>
+          <h3>Bife de Chorizo Swift Gran Reserva</h3>
+          <p>R$ 85,90 / Kg</p>
+          <div class="qtd">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+        </div>
+        <p class="subtotal">R$ 85,90</p>
+      </div>
+
+      <div class="item">
+        <img src="assets/img/frango.jpg" alt="Frango Temperado">
+        <div>
+          <h3>Frango Temperado Swift</h3>
+          <p>R$ 18,99</p>
+          <div class="qtd">
+            <button>-</button>
+            <span>2</span>
+            <button>+</button>
+          </div>
+        </div>
+        <p class="subtotal">R$ 37,98</p>
+      </div>
+    </div>
+
+    <!-- Barra de progresso frete grátis -->
+    <div class="frete-progresso">
+      <p>Faltam <strong>R$ 76,12</strong> para você ganhar frete grátis!</p>
+      <div class="barra">
+        <div class="preenchido" style="width: 60%;"></div>
+      </div>
+    </div>
+
+    <!-- Resumo da compra -->
+    <section class="resumo">
+      <h2>Resumo da compra</h2>
+      <p>Subtotal: <span>R$ 123,88</span></p>
+      <p>Frete: <span>R$ 15,00</span></p>
+      <p class="total">Total: <span>R$ 138,88</span></p>
+
+      <!-- Cupom -->
+      <div class="cupom">
+        <input type="text" placeholder="Insira um cupom">
+        <button>Aplicar</button>
+      </div>
+
+      <!-- Botão de continuar -->
+      <button class="btn-pagamento">Continuar para o pagamento</button>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <p>© 2025 Swift+ Personal Shopper | <a href="#">FAQ</a> | <a href="#">Política de Privacidade</a></p>
+  </footer>
+</body>
+</html>

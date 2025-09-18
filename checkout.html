@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swift+ | Checkout</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Topbar fixa -->
+<header class="topbar">
+  <div class="logo">Swift+</div>
+  <nav class="menu">
+    <a href="index.html">🏠 Início</a>
+    <a href="categorias.html">📂 Categorias</a>
+    <a href="pedido.html">📦 Pedido</a>
+    <a href="carrinho.html">🛍️ Carrinho</a>
+    <a href="perfil.html">👤 Perfil</a>
+    <a href="receitas.html">🍴 Receitas</a>
+    <a href="cupons.html">🎟️ Cupons</a>
+    <a href="lojas.html">📍 Lojas</a>
+    <a href="faq.html">❓ FAQ</a>
+  </nav>
+</header>
+
+  <!-- Conteúdo do Checkout -->
+  <main class="checkout">
+    <h1>🧾 Checkout</h1>
+
+    <!-- Endereço -->
+    <section class="endereco">
+      <h2>📍 Endereço de entrega</h2>
+      <p>Rua das Flores, 123 - São Paulo/SP</p>
+      <button>Alterar</button>
+    </section>
+
+    <!-- Opções de frete -->
+    <section class="frete">
+      <h2>🚚 Opções de frete</h2>
+      <label><input type="radio" name="frete" checked> Agendada - R$ 32,94</label><br>
+      <label><input type="radio" name="frete"> Padrão - R$ 15,87</label><br>
+      <label><input type="radio" name="frete"> Expressa - R$ 40,23</label>
+    </section>
+
+    <!-- Pagamento -->
+    <section class="pagamento">
+      <h2>💳 Forma de pagamento</h2>
+      <label><input type="radio" name="pagamento" checked> Pix</label><br>
+      <label><input type="radio" name="pagamento"> Cartão de Crédito</label><br>
+      <label><input type="radio" name="pagamento"> Carteira Digital (Google/Apple Pay)</label>
+    </section>
+
+    <!-- Resumo do pedido -->
+    <section class="resumo-checkout">
+      <h2>Resumo do Pedido</h2>
+      <p>Subtotal: <span>R$ 123,88</span></p>
+      <p>Frete: <span>R$ 15,87</span></p>
+      <p class="total">Total: <span>R$ 139,75</span></p>
+      <button class="btn-finalizar">Finalizar compra</button>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <p>© 2025 Swift+ Personal Shopper | <a href="#">FAQ</a> | <a href="#">Política de Privacidade</a></p>
+  </footer>
+</body>
+</html>
