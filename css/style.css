@@ -6,13 +6,18 @@
   font-family: Arial, sans-serif;
 }
 
+/* Body */
+body {
+  background: linear-gradient(#2e1818, #676767);
+}
+
 /* Topbar */
 .topbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: #b30000;
+  background: #00b330;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -40,7 +45,7 @@
 /* Banner */
 .banner {
   margin-top: 70px;
-  background: url("../assets/img/banner-churrasco.jpg") center/cover no-repeat;
+  background: url("/images/banner.png") center/cover no-repeat;
   color: white;
   text-align: center;
   padding: 60px 20px;
@@ -48,6 +53,9 @@
 
 .banner h1 {
   font-size: 2rem;
+  background-color: #f65e00;
+  border-radius: 8px;
+  padding: 1px 100px 1px 100px;
 }
 
 .banner p {
@@ -59,7 +67,7 @@
 .categorias {
   display: flex;
   justify-content: center;
-  background: #f5f5f5;
+  background: linear-gradient(#949393, #3f3232);
   padding: 15px;
 }
 
@@ -84,9 +92,10 @@
 
 .card {
   background: #fff;
-  border: 1px solid #ddd;
+  /* background: linear-gradient(#383131, #1f1616); */
+  border: 1px solid linear-gradient;
   border-radius: 8px;
-  padding: 15px;
+  padding: 0 0 8px;
   text-align: center;
 }
 
@@ -97,7 +106,7 @@
 
 .card h3 {
   font-size: 1rem;
-  margin: 10px 0;
+  margin: 10px 5px;
 }
 
 .card .preco {
@@ -687,13 +696,13 @@
 .lojas li strong {
   color: #b30000;
 }
-/* Topbar atualizada */
+/* Topbar atualizada area que se repete ----------------------------------------- */ 
 .topbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: #b30000;
+  background: linear-gradient(#2e1818, #333);
   color: white;
   display: flex;
   justify-content: space-between;
