@@ -34,8 +34,13 @@ body {
 .topbar .menu a {
   color: white;
   text-decoration: none;
+  text-align: center;
   margin-left: 20px;
   font-size: 1rem;
+  border-radius: 5px;
+  background-color: #ffbc9214;
+  margin-bottom: 10px;
+  width: 100px;
 }
 
 .topbar .menu a:hover {
@@ -53,14 +58,24 @@ body {
 
 .banner h1 {
   font-size: 2rem;
-  background-color: #f65e00;
-  border-radius: 8px;
-  padding: 1px 100px 1px 100px;
+  background-color: #f65e007f;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 80%;
+  max-width: 555px;
+  margin: 0 auto 10px auto;
+  /* padding: 1px 100px 1px 100px; */
 }
 
 .banner p {
   font-size: 1.2rem;
   margin-top: 10px;
+  background-color: #f65e007f;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 80%;
+  max-width: 310px;
+  margin: 0 auto 10px auto;
 }
 
 /* Categorias */
@@ -73,9 +88,15 @@ body {
 
 .categorias a {
   margin: 0 10px;
+  padding: 0 10px;
   text-decoration: none;
   color: #b30000;
   font-weight: bold;
+  border-radius: 5px;
+  background-color: #ffbc9238;
+  margin-bottom: 10px;
+  
+  width: 0 100px 0 100px;
 }
 
 .categorias a:hover {
