@@ -688,6 +688,7 @@ body {
   margin-bottom: 8px;
   background: #fafafa;
 }
+
 /* FAQ */
 .faq {
   margin-top: 80px;
@@ -782,6 +783,7 @@ body {
 .topbar .menu a:hover {
   text-decoration: underline;
 }
+
 /* Categorias */
 .categorias-page {
   margin-top: 80px;
@@ -1105,6 +1107,15 @@ body {
 .login-box a:hover {
   text-decoration: underline;
 }
+
+.btn-nao_tem_conta {
+  padding: 25px 0;
+}
+
+.btn-ja_tem_uma_conta {
+  padding: 15px 0;
+}
+
 /* .card-categoria {
   display: flex;
   align-items: flex-end;
