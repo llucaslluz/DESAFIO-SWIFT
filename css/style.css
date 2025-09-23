@@ -9,6 +9,24 @@
 /* Body */
 body {
   background: linear-gradient(#2e1818, #676767);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0;
+  width: 100%;
+  max-width: 1800px;
+}
+
+.header {
+  grid-row: 1;
+}
+
+.main-content {
+  grid-row: 2;
+}
+
+.footer {
+  grid-row: 3;
 }
 
 /* Topbar refinada */
@@ -168,14 +186,7 @@ body {
   background: #800000;
 }
 
-/* Rodapé */
-.rodape {
-  text-align: center;
-  padding: 20px;
-  background: #f5f5f5;
-  color: #333;
-  margin-top: 40px;
-}
+
 /* Página de Produto */
 .produto-detalhe {
   margin-top: 80px;
@@ -834,7 +845,7 @@ body {
   font-weight: bold;
 }
 
-.card-kids::after {
+/* .card-kids::after {
   content: '';
   position: absolute;
   top: 0;
@@ -843,14 +854,12 @@ body {
   height: 100%;
   background: linear-gradient(to bottom, rgba(64, 28, 2, 0.327) 0%, rgba(0, 0, 0, 0.4) 100%);
   z-index: 1;
-}
+} */
 
 .grid-categorias .card:hover {
   transform: translateY(-5px);
   border-color: #b30000;
 }
-
-
 
 /* Pedidos */
 .pedido-page {
@@ -1096,7 +1105,7 @@ body {
 .login-box a:hover {
   text-decoration: underline;
 }
-.card-categoria {
+/* .card-categoria {
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -1112,7 +1121,7 @@ body {
   padding: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.4);
   transition: transform 0.2s, box-shadow 0.2s;
-}
+} */
 
 .card-categoria::after {
   content: '';
@@ -1142,6 +1151,8 @@ body {
   gap: 20px;
   margin-top: 30px;
 }
+
+/* Carrossel e categorias */
 .carrossel-container {
   display: flex;
   align-items: center;
@@ -1174,15 +1185,17 @@ body {
   background-position: center;
   position: relative;
   text-decoration: none;
+  text-align: center;
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  padding: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  padding: 14px 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: transform 0.2s;
+  
 }
 
 .card-categoria span {
@@ -1206,6 +1219,7 @@ body {
 }
 
 .carrossel-btn {
+  text-align: center;
   background-color: #b30000;
   border: none;
   color: white;
@@ -1219,3 +1233,15 @@ body {
 .carrossel-btn:hover {
   background-color: #800000;
 }
+
+/* Rodapé */
+.footer {
+  width: 100%;
+  /* max-width: 1200px; */
+  text-align: center;
+  padding: 20px;
+  background: #f5f5f5;
+  color: #333;
+  margin-top: 40px;
+}
+

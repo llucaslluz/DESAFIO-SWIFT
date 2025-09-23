@@ -6,50 +6,54 @@
   <title>Swift+ | Categorias</title>
   <link rel="icon" href="images/Id.jpg" type="image/png">
   <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <!-- Topbar -->
-  <header class="topbar">
-    <div class="logo">Swift+</div>
-    <nav class="menu">
-      <a href="index.html">🏠 Início</a>
-      <a href="categorias.html">📂 Categorias</a>
-      <a href="pedido.html">📦 Pedido</a>
-      <a href="carrinho.html">🛍️ Carrinho</a>
-      <a href="perfil.html">👤 Perfil</a>
-      <a href="receitas.html">🍴 Receitas</a>
-      <a href="cupons.html">🎟️ Cupons</a>
-      <a href="lojas.html">📍 Lojas</a>
-      <a href="faq.html">❓ FAQ</a>
-    </nav>
-  </header>
+  </head>
+  <body>
+    <div class="header">
+      <!-- Topbar -->
+      <header class="topbar">
+        <div class="logo">Swift+</div>
+        <nav class="menu">
+          <a href="index.html">🏠 Início</a>
+          <a href="categorias.html">📂 Categorias</a>
+          <a href="pedido.html">📦 Pedido</a>
+          <a href="carrinho.html">🛍️ Carrinho</a>
+          <a href="perfil.html">👤 Perfil</a>
+          <a href="receitas.html">🍴 Receitas</a>
+          <a href="cupons.html">🎟️ Cupons</a>
+          <a href="lojas.html">📍 Lojas</a>
+          <a href="faq.html">❓ FAQ</a>
+        </nav>
+      </header>
+    </div>
 
-  <!-- Conteúdo -->
-<main class="categorias-page">
-  <h1>📂 Categorias</h1>
-  <div class="carrossel-container">
-  <button class="carrossel-btn left" onclick="scrollCarousel(-1)">←</button>
+  <div class="main-content">
+    <!-- Conteúdo -->
+    <main class="categorias-page">
+      <h1>📂 Categorias</h1>
+      <div class="carrossel-container">
+      <button class="carrossel-btn left" onclick="scrollCarousel(-1)">←</button>
 
-  <div class="carrossel" id="carrossel-categorias">
-    <a href="categorias-churrasco.html" class="card-categoria" style="background-image: url('images/Categoria Churrasco.jpg');"><span>🥩 Churrasco</span></a>
-    <a href="categorias-marmita.html" class="card-categoria" style="background-image: url('images/Categoria Marmita.jpg');"><span>🍱 Marmita</span></a>
-    <a href="categorias-kids.html" class="card-categoria" style="background-image: url('images/Categoria Kids.jpg');"><span>👶 Kids</span></a>
-    <a href="categorias-sobremesa.html" class="card-categoria" style="background-image: url('images/Categoria\ Sobremesas.jpg');"><span>🍰 Sobremesas</span></a>
-    <a href="categorias-vegetais.html" class="card-categoria" style="background-image: url('images/Categoria Vegetais.jpg');"><span>🥦 Vegetais</span></a>
-    <a href="categorias-pescados.html" class="card-categoria" style="background-image: url('images/Categoria Pescados.jpg');"><span>🐟 Pescados</span></a>
+      <div class="carrossel" id="carrossel-categorias">
+        <a href="categorias-churrasco.html" class="card-categoria" style="background-image: url('images/Categoria Churrasco.jpg');"><span>🥩 Churrasco</span></a>
+        <a href="categorias-marmita.html" class="card-categoria" style="background-image: url('images/Categoria Marmita.jpg');"><span>🍱 Marmita</span></a>
+        <a href="categorias-kids.html" class="card-categoria" style="background-image: url('images/Categoria Kids.jpg');"><span>👶 Kids</span></a>
+        <a href="categorias-sobremesa.html" class="card-categoria" style="background-image: url('images/Categoria\ Sobremesas.jpg');"><span>🍰 Sobremesas</span></a>
+        <a href="categorias-vegetais.html" class="card-categoria" style="background-image: url('images/Categoria Vegetais.jpg');"><span>🥦 Vegetais</span></a>
+        <a href="categorias-pescados.html" class="card-categoria" style="background-image: url('images/Categoria Pescados.jpg');"><span>🐟 Pescados</span></a>
+      </div>
+
+      <div>
+        <button class="carrossel-btn right" onclick="scrollCarousel(1)">→</button>
+      </div>
+
+    </main>
   </div>
+      <!-- Rodapé -->
+      <footer class="footer">
+        <p>© 2025 Swift+ Personal Shopper</p>
+      </footer>
 
-  <button class="carrossel-btn right" onclick="scrollCarousel(1)">→</button>
-</div>
-
-</main>
-
-   <!-- Rodapé -->
-  <footer class="rodape">
-    <p>© 2025 Swift+ Personal Shopper</p>
-  </footer>
-
-  <!-- Script do carrossel -->
-  <script src="js/carrossel.js"></script>
-</body>
+      <!-- Script do carrossel -->
+      <script src="js/carrossel.js"></script>
+  </body>
 </html>
