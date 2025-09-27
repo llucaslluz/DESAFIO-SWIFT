@@ -14,7 +14,6 @@ body {
   min-height: 100vh;
   margin: 0;
   width: 100%;
-  max-width: 1800px;
 }
 
 .header {
@@ -290,9 +289,14 @@ body {
 .carrinho-itens .item {
   display: flex;
   align-items: center;
+  
   justify-content: space-between;
   border-bottom: 1px solid #eee;
-  padding: 15px 0;
+  padding: 16px 0;
+}
+
+.carrinho-itens .prc-carrinho {
+  padding: 8px 0;
 }
 
 .carrinho-itens .item:last-child {
@@ -311,7 +315,7 @@ body {
 .qtd {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 13px;
 }
 
 .qtd button {
