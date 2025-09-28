@@ -6,55 +6,80 @@
   <title>Swift+ | Marmita</title>
   <link rel="icon" href="images/Id.jpg" type="image/png">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
   <!-- Topbar fixa -->
-  <header class="topbar">
-    <div class="logo">Swift+</div>
-    <nav class="menu">
-      <a href="index.html">🏠 Início</a>
-      <a href="categorias.html">📂 Categorias</a>
-      <a href="pedido.html">📦 Pedido</a>
-      <a href="carrinho.html">🛍️ Carrinho</a>
-      <a href="perfil.html">👤 Perfil</a>
-      <a href="receitas.html">🍴 Receitas</a>
-      <a href="cupons.html">🎟️ Cupons</a>
-      <a href="lojas.html">📍 Lojas</a>
-      <a href="faq.html">❓ FAQ</a>
-    </nav>
+  <header class="topbar navbar navbar-expand-lg navbar-light sticky-top p-0">
+    <div class="container-fluid">
+      <a class="logo navbar-brand fw-bold ms-3" href="#">Swift+</a>
+      
+      <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <nav class="menu navbar-nav">
+          <a class="nav-link" href="index.html">🏠 Início</a>
+          <a class="nav-link active" aria-current="page" href="categorias.html">📂 Categorias</a>
+          <a class="nav-link" href="pedido.html">📦 Pedido</a>
+          <a class="nav-link" href="carrinho.html">🛍️ Carrinho</a>
+          <a class="nav-link" href="perfil.html">👤 Perfil</a>
+          <a class="nav-link" href="receitas.html">🍴 Receitas</a>
+          <a class="nav-link" href="cupons.html">🎟️ Cupons</a>
+          <a class="nav-link" href="lojas.html">📍 Lojas</a>
+          <a class="nav-link" href="faq.html">❓ FAQ</a>
+        </nav>
+      </div>
+    </div>
   </header>
 
   <!-- Conteúdo principal -->
-  <main class="categoria-page">
-    <h1>🍱 Categoria: Marmita</h1>
+  <main class="categoria-page container my-4 flex-grow-1">
+    <h1 class="mt-1 pt-1 mb-2">🍱 Categoria: Marmita</h1>
+    
     <div class="produtos">
       <!-- Produto 1 -->
-      <div class="card">
-        <img src="images/marmita-frango.jpg" alt="Marmita Frango Grelhado">
-        <h3>Frango Grelhado com Arroz Integral</h3>
-        <p class="preco">R$ 19,90</p>
-        <button>Adicionar ao Carrinho</button>
+      <div>
+        <div class="card h-100">
+          <img src="images/marmita-frango.jpg" alt="Marmita Frango Grelhado" class="img-fluid rounded">
+          <div class="p-3">
+            <h3>Frango Grelhado com Arroz Integral</h3>
+            <p class="preco">R$ 19,90</p>
+            <button class="w-100">Adicionar ao Carrinho</button>
+          </div>
+        </div>
       </div>
       <!-- Produto 2 -->
-      <div class="card">
-        <img src="images/Categoria Marmita.jpg" alt="Marmita Feijoada">
-        <h3>Feijoada Swift</h3>
-        <p class="preco">R$ 22,90</p>
-        <button>Adicionar ao Carrinho</button>
+      <div>
+        <div class="card h-100">
+          <img src="images/Categoria Marmita.jpg" alt="Marmita Feijoada" class="img-fluid rounded">
+          <div class="p-3">
+            <h3>Feijoada Swift</h3>
+            <p class="preco">R$ 22,90</p>
+            <button class="w-100">Adicionar ao Carrinho</button>
+          </div>
+        </div>
       </div>
       <!-- Produto 3 -->
-      <div class="card">
-        <img src="images/marmita-veg.jpg" alt="Marmita Vegana">
-        <h3>Marmita Vegana com Quinoa</h3>
-        <p class="preco">R$ 24,90</p>
-        <button>Adicionar ao Carrinho</button>
+      <div>
+        <div class="card h-100">
+          <img src="images/marmita-veg.jpg" alt="Marmita Vegana" class="img-fluid rounded">
+          <div class="p-3">
+            <h3>Marmita Vegana com Quinoa</h3>
+            <p class="preco">R$ 24,90</p>
+            <button class="w-100">Adicionar ao Carrinho</button>
+          </div>
+        </div>
       </div>
-    </div>
+
+      </div>
   </main>
 
-  <!-- Rodapé -->
   <footer class="rodape">
     <p>© 2025 Swift+ Personal Shopper</p>
   </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

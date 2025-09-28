@@ -5,56 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Swift+ | Churrasco</title>
   <link rel="icon" href="images/Id.jpg" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <!-- Topbar fixa -->
-  <header class="topbar">
-    <div class="logo">Swift+</div>
-    <nav class="menu">
-      <a href="index.html">🏠 Início</a>
-      <a href="categorias.html">📂 Categorias</a>
-      <a href="pedido.html">📦 Pedido</a>
-      <a href="carrinho.html">🛍️ Carrinho</a>
-      <a href="perfil.html">👤 Perfil</a>
-      <a href="receitas.html">🍴 Receitas</a>
-      <a href="cupons.html">🎟️ Cupons</a>
-      <a href="lojas.html">📍 Lojas</a>
-      <a href="faq.html">❓ FAQ</a>
-    </nav>
-  </header>
+<body class="d-flex flex-column min-vh-100"> 
+  
+  <header class="topbar navbar navbar-expand-lg navbar-light sticky-top p-0">
+    <div class="container-fluid">
+      <a class="logo navbar-brand fw-bold ms-3" href="#">Swift+</a>
+      
+      <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <!-- Conteúdo principal -->
-  <main class="categoria-page">
-    <h1>🥩 Categoria: Churrasco</h1>
-    <div class="produtos">
-      <!-- Produto 1 -->
-      <div class="card">
-        <img src="images/Picanha Swift.jpg" alt="Picanha Bovina Swift">
-        <h3>Picanha Bovina Swift</h3>
-        <p class="preco">R$ 89,90</p>
-        <button>Adicionar ao Carrinho</button>
-      </div>
-      <!-- Produto 2 -->
-      <div class="card">
-        <img src="images/linguica.jpg" alt="Linguiça Toscana Swift">
-        <h3>Linguiça Toscana Swift</h3>
-        <p class="preco">R$ 29,90</p>
-        <button>Adicionar ao Carrinho</button>
-      </div>
-      <!-- Produto 3 -->
-      <div class="card">
-        <img src="images/fraldinha.jpg" alt="Fraldinha Temperada Swift">
-        <h3>Fraldinha Temperada Swift</h3>
-        <p class="preco">R$ 49,90</p>
-        <button>Adicionar ao Carrinho</button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <nav class="menu navbar-nav">
+          <a class="nav-link" href="index.html">🏠 Início</a>
+          <a class="nav-link active" aria-current="page" href="categorias.html">📂 Categorias</a>
+          <a class="nav-link" href="pedido.html">📦 Pedido</a>
+          <a class="nav-link" href="carrinho.html">🛍️ Carrinho</a>
+          <a class="nav-link" href="perfil.html">👤 Perfil</a>
+          <a class="nav-link" href="receitas.html">🍴 Receitas</a>
+          <a class="nav-link" href="cupons.html">🎟️ Cupons</a>
+          <a class="nav-link" href="lojas.html">📍 Lojas</a>
+          <a class="nav-link" href="faq.html">❓ FAQ</a>
+        </nav>
       </div>
     </div>
-  </main>
+  </header>
+  <!-- Conteúdo principal -->
+  <main class="categoria-page container my-4 flex-grow-1">
+    <h1 class="mt-5 pt-3 mb-4">🥩 Categoria: Churrasco</h1>
+    
+    <div class="produtos">
+      <!-- Produto 1 -->
+      <div>
+        <div class="card">
+          <img src="images/Picanha Swift.jpg" alt="Picanha Bovina Swift" class="img-fluid rounded">
+          <div class="p-3">
+            <h3>Picanha Bovina Swift</h3>
+            <p class="preco">R$ 89,90</p>
+            <button class="w-100">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+      </div>
+      <!-- Produto 2 -->
+      <div>
+        <div class="card">
+          <img src="images/linguica.jpg" alt="Linguiça Toscana Swift" class="img-fluid rounded">
+          <div class="p-3">
+            <h3>Linguiça Toscana Swift</h3>
+            <p class="preco">R$ 29,90</p>
+            <button class="w-100">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+      </div>
+      <!-- Produto 3 -->
+      <div>
+        <div class="card">
+          <img src="images/fraldinha.jpg" alt="Fraldinha Temperada Swift" class="img-fluid rounded">
+          <div class="p-3">
+            <h3>Fraldinha Temperada Swift</h3>
+            <p class="preco">R$ 49,90</p>
+            <button class="w-100">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+    </div>
 
+      </div>
+  </main>
   <!-- Rodapé -->
   <footer class="rodape">
     <p>© 2025 Swift+ Personal Shopper</p>
   </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
