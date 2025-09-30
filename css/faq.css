@@ -58,3 +58,34 @@
 .faq-item a:hover {
   text-decoration: underline;
 }
+
+/* Suporte humano */
+.faq-suporte {
+  margin-top: 40px;
+  text-align: center;
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.faq-suporte p {
+  color: #ddd;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.suporte-btn {
+  display: inline-block;
+  background: #25d366; /* verde WhatsApp */
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.suporte-btn:hover {
+  opacity: 0.9;
+}
+
