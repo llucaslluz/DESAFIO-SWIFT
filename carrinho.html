@@ -65,12 +65,46 @@
       </div>
     </div>
 
+<!-- Sugestões Inteligentes -->
+<section class="sugestoes">
+  <h2>Sugestões para completar seu pedido</h2>
+  <div class="sugestoes-grid">
+    <div class="sugestao-card">
+      <img src="images/Pao de Alho.jpg" alt="Pão de Alho">
+      <h4>Pão de Alho Swift</h4>
+      <p class="preco">R$ 12,90</p>
+      <button>Adicionar</button>
+    </div>
+    <div class="sugestao-card">
+      <img src="images/Guarana.jpg" alt="Guaraná">
+      <h4>Guaraná 2L</h4>
+      <p class="preco">R$ 8,50</p>
+      <button>Adicionar</button>
+    </div>
+    <div class="sugestao-card">
+      <img src="images/Pudim.jpg" alt="Pudim">
+      <h4>Pudim Swift</h4>
+      <p class="preco">R$ 14,90</p>
+      <button>Adicionar</button>
+    </div>
+  </div>
+</section>
+
+
+
     <!-- Resumo -->
     <aside class="resumo">
       <h2>Resumo do Pedido</h2>
       <p>Subtotal: <span>R$ 325,70</span></p>
       <p>Frete: <span>R$ 15,00</span></p>
       <p class="total">Total: <span>R$ 340,70</span></p>
+      <!-- Cupom de desconto -->
+<div class="cupom">
+  <input type="text" id="input-cupom" placeholder="Digite seu cupom">
+  <button id="btn-aplicar-cupom">Aplicar</button>
+  <p id="msg-cupom" class="cupom-msg"></p>
+</div>
+
       <button class="btn-finalizar">Finalizar Compra</button>
     </aside>
   </main>
@@ -83,5 +117,8 @@
 <a href="https://wa.me/55031995543311" target="_blank" class="whatsapp-float" aria-label="Falar com atendente no WhatsApp">
   <i class="fa-brands fa-whatsapp"></i>
 </a>
+
+<script src="js/carrinho.js"></script>
+
 </body>
 </html>

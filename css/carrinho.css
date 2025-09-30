@@ -117,3 +117,108 @@
 .btn-finalizar:hover {
   opacity: 0.85;
 }
+
+/* Sugestões Inteligentes */
+.sugestoes {
+  margin-top: 30px;
+  color: #fff;
+}
+
+.sugestoes h2 {
+  color: var(--primary-orange);
+  margin-bottom: 20px;
+}
+
+.sugestoes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.sugestao-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.sugestao-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+.sugestao-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.sugestao-card h4 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.sugestao-card .preco {
+  color: var(--primary-orange);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sugestao-card button {
+  background: var(--primary-red);
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.3s;
+}
+
+.sugestao-card button:hover {
+  opacity: 0.85;
+}
+
+/* Cupom */
+.cupom {
+  margin: 15px 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cupom input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #555;
+  background: #2e1818;
+  color: #fff;
+}
+
+.cupom button {
+  padding: 8px 14px;
+  background: var(--primary-orange);
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.cupom button:hover {
+  opacity: 0.9;
+}
+
+.cupom-msg {
+  width: 100%;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+.cupom-msg.ok {
+  color: #2ecc71;
+}
+.cupom-msg.erro {
+  color: #e74c3c;
+}
