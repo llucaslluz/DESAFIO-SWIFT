@@ -34,10 +34,11 @@
   </header>
 
   <!-- Conteúdo -->
-  <main class="pedido-detalhe-container">
-    <h1>📦 Pedido #12345</h1>
-    <p>Data: 15/09/2025</p>
-    <p>Status: <span class="status em-andamento">Em andamento</span></p>
+<main class="pedido-detalhe-container">
+  <h1>📦 Pedido #<span id="pedido-id">---</span></h1>
+  <p>Data: <span id="pedido-data">--/--/----</span></p>
+  <p>Status: <span id="pedido-status" class="status em-andamento">Em andamento</span></p>
+
 
     <!-- Itens do pedido -->
     <section class="itens-pedido">
@@ -48,6 +49,32 @@
         <li>1x Frango Temperado — R$ 18,99</li>
       </ul>
     </section>
+
+        <!-- Status do pedido -->
+    <section class="status-pedido">
+      <h2>Status do Pedido</h2>
+      <ul class="status-steps">
+        <li id="step1" class="active">Em Preparo</li>
+        <li id="step2">Pronto para Retirada</li>
+        <li id="step3">Retirado</li>
+      </ul>
+    </section>
+
+    <!-- QR Code -->
+    <section class="qr-pedido">
+      <h2>QR Code para Retirada</h2>
+      <canvas id="pedido-qr"></canvas>
+      <p class="qr-texto">Mostre este QR Code na loja para retirar seu pedido.</p>
+    </section>
+
+    <!-- Notificações -->
+    <section class="notificacoes-pedido">
+      <h2>Notificações</h2>
+      <ul id="notificacoes-list">
+        <li>Acompanhe aqui as atualizações do seu pedido.</li>
+      </ul>
+    </section>
+
 
     <!-- Totais -->
     <section class="totais">
@@ -72,5 +99,7 @@
     <p>© 2025 Swift+ Personal Shopper</p>
   </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+<script src="js/pedido-detalhe.js"></script>
 </body>
 </html>

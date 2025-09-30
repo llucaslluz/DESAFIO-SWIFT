@@ -38,32 +38,33 @@
     <h1>📦 Meus Pedidos</h1>
     <p class="subtitulo">Acompanhe o status dos seus pedidos</p>
 
-    <div class="pedido-card">
-      <h3>Pedido #12345</h3>
-      <p>Data: 15/09/2025</p>
-      <p>Status: <span class="status em-andamento">Em andamento</span></p>
-      <button>Ver Detalhes</button>
-    </div>
+    <div class="pedido-card" data-id="12345">
+  <h3>Pedido #12345</h3>
+  <p>Data: 15/09/2025</p>
+  <p>Status: <span class="status em-andamento">Em andamento</span></p>
+  <button onclick="window.location.href='pedido-detalhe.html?id=12345'">Ver Detalhes</button>
+</div>
 
-    <div class="pedido-card">
-      <h3>Pedido #12344</h3>
-      <p>Data: 10/09/2025</p>
-      <p>Status: <span class="status pronto">Pronto para retirada</span></p>
-      <button>Ver Detalhes</button>
-    </div>
+<div class="pedido-card" data-id="12344">
+  <h3>Pedido #12344</h3>
+  <p>Data: 10/09/2025</p>
+  <p>Status: <span class="status pronto">Pronto para retirada</span></p>
+  <button onclick="window.location.href='pedido-detalhe.html?id=12344'">Ver Detalhes</button>
+</div>
 
-    <div class="pedido-card">
-      <h3>Pedido #12343</h3>
-      <p>Data: 02/09/2025</p>
-      <p>Status: <span class="status entregue">Entregue</span></p>
-      <button>Ver Detalhes</button>
-    </div>
+<div class="pedido-card" data-id="12343">
+  <h3>Pedido #12343</h3>
+  <p>Data: 02/09/2025</p>
+  <p>Status: <span class="status entregue">Entregue</span></p>
+  <button onclick="window.location.href='pedido-detalhe.html?id=12343'">Ver Detalhes</button>
+</div>
   </main>
 
   <!-- Rodapé -->
   <footer class="rodape">
     <p>© 2025 Swift+ Personal Shopper</p>
   </footer>
+<script src="js/pedido.js"></script>
 
 </body>
 </html>

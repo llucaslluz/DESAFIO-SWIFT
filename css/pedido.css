@@ -79,3 +79,13 @@
 .pedido-card button:hover {
   opacity: 0.85;
 }
+
+/* Animação de status mudando */
+.status.atualizando {
+  animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
+}
