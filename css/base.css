@@ -1,11 +1,12 @@
 /* =========================
-   GLOBAL BASE
+  GLOBAL BASE
    ========================= */
 
 :root {
   --primary-red: #b30000;
   --secondary-red: #800000;
   --primary-orange: #F26522;
+  --secundary-orange: #f37b35d5;
   --bg-light: #f9f9f9;
   --bg-dark: #2e1818;
   --text-dark: #333;
