@@ -35,39 +35,51 @@
       <h1>📂 Escolha sua categoria</h1>
       <p class="subtitulo">Selecione uma das opções abaixo</p>
 
+<!-- Barra de Filtros Inteligentes -->
+<div class="filtros-inteligentes">
+  <button data-filtro="all" class="ativo">✨ Todos</button>
+  <button data-filtro="churrasco">🔥 Churrasco</button>
+  <button data-filtro="marmita">🍱 Marmita</button>
+  <button data-filtro="kids">👶 Kids</button>
+  <button data-filtro="gourmet">🍷 Gourmet</button>
+  <button data-filtro="saudavel">🥗 Saudável</button>
+</div>
+
+
       <div class="grid-categorias">
 
-        <a href="categoria-bovinos.html" class="card-categoria" style="background-image: url('/images/Categoria\ Churrasco.jpg');">
-          <span>🥩 Bovinos</span>
-        </a>
+       <a href="categoria-bovinos.html" class="card-categoria" data-tags="churrasco gourmet" style="background-image: url('/images/Categoria Churrasco.jpg');">
+  <span>🥩 Bovinos</span>
+</a>
 
-        <a href="categoria-aves.html" class="card-categoria" style="background-image: url('images/Categoria Aves.jpg');">
-          <span>🍗 Aves</span>
-        </a>
+<a href="categoria-aves.html" class="card-categoria" data-tags="churrasco saudavel" style="background-image: url('images/Categoria Aves.jpg');">
+  <span>🍗 Aves</span>
+</a>
 
-        <a href="categoria-suinos.html" class="card-categoria" style="background-image: url('images/Categoria Suinos.jpg');">
-          <span>🐖 Suínos</span>
-        </a>
+<a href="categoria-suinos.html" class="card-categoria" data-tags="churrasco" style="background-image: url('images/Categoria Suinos.jpg');">
+  <span>🐖 Suínos</span>
+</a>
 
-        <a href="categoria-pescados.html" class="card-categoria" style="background-image: url('images/Categoria Pescados.jpg');">
-          <span>🐟 Pescados</span>
-        </a>
+<a href="categoria-pescados.html" class="card-categoria" data-tags="saudavel gourmet" style="background-image: url('images/Categoria Pescados.jpg');">
+  <span>🐟 Pescados</span>
+</a>
 
-        <a href="categoria-vegetais.html" class="card-categoria" style="background-image: url('images/Categoria Vegetais.jpg');">
-          <span>🥦 Vegetais</span>
-        </a>
+<a href="categoria-vegetais.html" class="card-categoria" data-tags="saudavel marmita" style="background-image: url('images/Categoria Vegetais.jpg');">
+  <span>🥦 Vegetais</span>
+</a>
 
-        <a href="categoria-sobremesas.html" class="card-categoria" style="background-image: url('images/Categoria Sobremesas.jpg');">
-          <span>🍰 Sobremesas</span>
-        </a>
+<a href="categoria-sobremesas.html" class="card-categoria" data-tags="gourmet" style="background-image: url('images/Categoria Sobremesas.jpg');">
+  <span>🍰 Sobremesas</span>
+</a>
 
-        <a href="/categorias-kids.html" class="card-categoria" style="background-image: url('images/Categoria Kids.jpg');">
-          <span>👶 Kids</span>
-        </a>
+<a href="categorias-kids.html" class="card-categoria" data-tags="kids" style="background-image: url('images/Categoria Kids.jpg');">
+  <span>👶 Kids</span>
+</a>
 
-        <a href="/categorias-marmita.html" class="card-categoria" style="background-image: url('images/Categoria Marmita.jpg');">
-          <span>🍱 Marmitas</span>
-        </a>
+<a href="categorias-marmita.html" class="card-categoria" data-tags="marmita saudavel" style="background-image: url('images/Categoria Marmita.jpg');">
+  <span>🍱 Marmitas</span>
+</a>
+
 
       </div>
     </section>
@@ -78,6 +90,6 @@
     <p>© 2025 Swift+ Personal Shopper</p>
   </footer>
 
-
+<script src="js/categorias.js"></script>
 </body>
 </html>

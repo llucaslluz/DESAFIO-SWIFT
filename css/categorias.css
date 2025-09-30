@@ -74,3 +74,34 @@
   transform: translateY(-6px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.45);
 }
+
+/* Filtros Inteligentes */
+.filtros-inteligentes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.filtros-inteligentes button {
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filtros-inteligentes button:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.filtros-inteligentes button.ativo {
+  background: var(--primary-orange);
+  border-color: var(--primary-orange);
+  color: #111;
+}
+
