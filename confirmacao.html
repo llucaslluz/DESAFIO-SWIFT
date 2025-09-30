@@ -3,81 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Swift+ | Confirmação de Pedido</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body id="page-confirmacao" class="d-flex flex-column min-vh-100">
-  
-  <header class="topbar navbar navbar-expand-lg navbar-light sticky-top p-0">
-    <div class="container-fluid">
-      <a class="logo navbar-brand fw-bold ms-3" href="#">Swift+</a>
-      
-      <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <title>Swift+ | Pedido Confirmado</title>
+  <link rel="icon" href="images/Id.jpg" type="image/png">
 
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <nav class="menu navbar-nav">
-          <a class="nav-link" href="index.html">🏠 Início</a>
-          <a class="nav-link" href="categorias.html">📂 Categorias</a>
-          <a class="nav-link" href="pedido.html">📦 Pedido</a>
-          <a class="nav-link" href="carrinho.html">🛍️ Carrinho</a>
-          <a class="nav-link" href="perfil.html">👤 Perfil</a>
-          <a class="nav-link" href="receitas.html">🍴 Receitas</a>
-          <a class="nav-link" href="cupons.html">🎟️ Cupons</a>
-          <a class="nav-link" href="lojas.html">📍 Lojas</a>
-          <a class="nav-link" href="faq.html">❓ FAQ</a>
-        </nav>
-      </div>
-    </div>
+  <!-- CSS Base -->
+  <link rel="stylesheet" href="css/base.css">
+  <!-- CSS específico -->
+  <link rel="stylesheet" href="css/confirmacao.css">
+
+  <!-- Fonte e ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="confirmacao-page">
+
+  <!-- Topbar fixa -->
+  <header class="topbar">
+    <div class="logo">Swift+</div>
+    <nav class="menu">
+      <a href="index.html">🏠 Início</a>
+      <a href="categorias.html">📂 Categorias</a>
+      <a href="pedido.html">📦 Pedido</a>
+      <a href="carrinho.html">🛍️ Carrinho</a>
+      <a href="perfil.html">👤 Perfil</a>
+      <a href="receitas.html">🍴 Receitas</a>
+      <a href="cupons.html">🎟️ Cupons</a>
+      <a href="lojas.html">📍 Lojas</a>
+      <a href="faq.html">❓ FAQ</a>
+    </nav>
   </header>
 
-  <main class="confirmacao container flex-grow-1 my-5">
-    
-    <div class="row justify-content-center">
-      <div class="col-lg-8 col-xl-6">
-        
-        <h1 class="text-center mb-3">✅ Pedido Recebido!</h1>
-        <p class="text-center mb-4">Obrigado pela sua compra. Abaixo estão os detalhes e o código de pagamento.</p>
+  <!-- Conteúdo -->
+  <main class="confirmacao-container">
+    <h1>✅ Pedido Confirmado!</h1>
+    <p>Obrigado por comprar no <strong>Swift+ Personal Shopper</strong>.</p>
+    <p>Número do pedido: <strong>#12345</strong></p>
 
-        <div class="qrcode text-center mb-4">
-          <img src="caminho/para/seu/qrcode.png" alt="QR Code PIX" class="img-fluid mb-2">
-          <p class="text-muted">Escaneie para pagar com PIX</p>
-        </div>
+    <!-- QR Code -->
+    <div class="qrcode">
+      <img src="images/qrcode.png" alt="QR Code de pagamento/retirada">
+      <p>Apresente este código na loja ou use para o pagamento via Pix.</p>
+    </div>
 
-        <div class="pedido-info mx-auto">
-          <h2 class="h4 mb-4">Detalhes do Pedido #123456</h2>
-          
-          <ul class="list-unstyled mb-3">
-            <li><span class="fw-bold">Data:</span> 27/09/2025</li>
-            <li><span class="fw-bold">Forma de Pagamento:</span> PIX (Aguardando)</li>
-            <li><span class="fw-bold">Previsão de Entrega:</span> 30/09/2025</li>
-          </ul>
+    <!-- Informações do pedido -->
+    <div class="pedido-info">
+      <h2>Resumo do Pedido</h2>
+      <ul>
+        <li>1x Bife de Chorizo — R$ 85,90</li>
+        <li>2x Picanha Baby — R$ 239,80</li>
+      </ul>
+      <p class="total">Total: R$ 325,70</p>
+    </div>
 
-          <h3 class="h6">Itens:</h3>
-          <ul class="list-unstyled">
-            <li>- Bife de Chorizo (1 un.)</li>
-            <li>- Frango Temperado (2 un.)</li>
-          </ul>
-
-          <p class="total">Total: R$ 138,88</p>
-          <p>Status: <span class="status pronto">Aguardando Pagamento</span></p>
-        </div>
-
-        <div class="acoes d-grid gap-2 d-md-flex justify-content-md-center mt-4">
-          <button class="btn btn-lg btn-success">Acompanhar Pedido</button>
-          <button class="secundario btn btn-lg btn-secondary">Detalhar Compra</button>
-        </div>
-
-      </div>
+    <!-- Ações -->
+    <div class="acoes">
+      <button onclick="window.location.href='index.html'">Continuar Comprando</button>
+      <button class="secundario" onclick="window.location.href='pedido.html'">Acompanhar Pedido</button>
     </div>
   </main>
 
+  <!-- Rodapé -->
   <footer class="rodape">
-    <p class="mb-0 text-muted">© 2025 Swift+ Personal Shopper | <a href="#" class="text-decoration-none">FAQ</a> | <a href="#" class="text-decoration-none">Política de Privacidade</a></p>
+    <p>© 2025 Swift+ Personal Shopper</p>
   </footer>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>

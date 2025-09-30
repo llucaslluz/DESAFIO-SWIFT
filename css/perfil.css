@@ -1,0 +1,84 @@
+/* =========================
+   PERFIL PAGE
+   ========================= */
+
+.perfil-container {
+  margin-top: 100px; /* compensar topbar fixa */
+  padding: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+
+/* Informações */
+.perfil-info {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.perfil-info h1 {
+  color: var(--primary-orange);
+  margin-bottom: 15px;
+}
+
+.perfil-info p {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* Opções */
+.perfil-opcoes h2 {
+  margin-bottom: 15px;
+  color: var(--primary-orange);
+}
+
+.perfil-opcoes ul {
+  list-style: none;
+  padding: 0;
+}
+
+.perfil-opcoes li {
+  margin: 12px 0;
+}
+
+.perfil-opcoes a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.perfil-opcoes a i {
+  margin-right: 8px;
+  color: var(--primary-orange);
+}
+
+.perfil-opcoes a:hover {
+  color: var(--primary-orange);
+}
+
+/* Logout */
+.logout {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.logout button {
+  background: #a30000;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: opacity 0.3s;
+}
+
+.logout button:hover {
+  opacity: 0.85;
+}

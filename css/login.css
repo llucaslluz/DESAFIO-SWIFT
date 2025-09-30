@@ -1,0 +1,115 @@
+/* ==== BASE: garante altura cheia e zera margens ==== */
+html, body { height: 100%; }
+
+/* ==== Fundo degradê idêntico ao original (duas opções) ==== */
+/* Se o body tiver classe "login" ou "cadastro" */
+body.login,
+body.cadastro {
+  background: linear-gradient(60deg, #ffddcd, #ffbfbf);
+}
+
+/* Se você usar as classes antigas de fundo no body */
+body.bk-color01,
+body.bk-color02 {
+  background: linear-gradient(60deg, #ffddcd, #ffbfbf);
+}
+
+/* ==== Centralização robusta (funciona com ou sem wrapper) ==== */
+/* Tenta centrar pelo body */
+body.login,
+body.cadastro,
+body.bk-color01,
+body.bk-color02 {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;      /* respiro nas bordas em telas pequenas */
+}
+
+/* Se existir um wrapper .login (div), evita que ele quebre o layout */
+div.login,
+div.cadastro {
+  /* remove fundo sólido que cobria o degradê */
+  background: transparent !important;
+  min-height: auto;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+/* ==== Cartão ==== */
+.login-box {
+  background: #fff;
+  width: min(400px, 92vw);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.1);
+  text-align: center;
+}
+
+/* Títulos e textos */
+.login-box h1 {
+  font-size: 1.8rem;
+  margin-bottom: .5rem;
+  color: #ff5722;
+}
+.login-box p { color: #555; margin-bottom: 1.25rem; }
+
+/* Gradiente no texto (como no original) */
+.texto-gradiente{
+  background: linear-gradient(#F26522, #b30000);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Formulário */
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.login-box input{
+  padding: .8rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+.login-box input:focus{
+  border-color:#ff5722;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255,87,34,.2);
+}
+
+/* Botão principal (igual ao antigo) */
+button.fundo-gradiente,
+.login-box button{
+  background: linear-gradient(70deg, #F26522, #b30000);
+  color:#fff;
+  padding:.9rem 1rem;
+  font-size:1rem;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  transition:.25s;
+}
+button.fundo-gradiente:hover,
+.login-box button:hover{
+  background: transparent;
+  color:#F26522;
+  border:2px solid #F26522;
+}
+
+/* Botões sociais */
+.login-social{
+  display:flex; flex-direction:column; gap:10px; margin-bottom:15px;
+}
+.login-social button{ border:none; padding:10px; border-radius:6px; font-weight:700; cursor:pointer; }
+.login-social .google{ background: linear-gradient(45deg, #b30000, #ff3636); color:#fff; }
+.login-social .facebook{ background: linear-gradient(45deg, #4267B2, #03379f); color:#fff; }
+
+/* Links */
+.login-box a{
+  display:block; margin-top:10px; color:#ff5722; text-decoration:none; font-weight:500;
+}
+.login-box a:hover{ text-decoration: underline; }

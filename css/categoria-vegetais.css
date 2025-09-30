@@ -1,0 +1,74 @@
+/* =========================
+   CATEGORIA VEGETAIS
+   ========================= */
+
+.categoria-vegetais-page .categoria-container {
+  margin-top: 100px;
+  padding: 40px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.categoria-vegetais-page h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--primary-orange);
+}
+
+.categoria-vegetais-page .subtitulo {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.categoria-vegetais-page .grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.categoria-vegetais-page .card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.categoria-vegetais-page .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+.categoria-vegetais-page .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.categoria-vegetais-page .card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.categoria-vegetais-page .card .preco {
+  color: var(--primary-orange);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.categoria-vegetais-page .card button {
+  background: var(--primary-red);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.categoria-vegetais-page .card button:hover {
+  background: var(--secondary-red);
+}

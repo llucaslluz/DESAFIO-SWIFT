@@ -1,0 +1,92 @@
+/* =========================
+   CONFIRMAÇÃO PAGE
+   ========================= */
+
+.confirmacao-container {
+  margin-top: 100px; /* compensar topbar fixa */
+  text-align: center;
+  padding: 40px;
+  color: #fff;
+}
+
+.confirmacao-container h1 {
+  color: var(--status-success, #2ecc71);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.confirmacao-container p {
+  margin-bottom: 8px;
+  color: #ddd;
+}
+
+.qrcode {
+  margin: 30px auto;
+}
+.qrcode img {
+  width: 160px;
+  height: 160px;
+  border: 4px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  margin-bottom: 10px;
+}
+
+.pedido-info {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 500px;
+  text-align: left;
+}
+
+.pedido-info h2 {
+  margin-bottom: 10px;
+  color: var(--primary-orange);
+}
+
+.pedido-info ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.pedido-info li {
+  margin-bottom: 6px;
+}
+
+.pedido-info .total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 15px;
+  color: var(--primary-orange);
+}
+
+.acoes {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.acoes button {
+  background: var(--primary-red);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: opacity 0.3s;
+}
+.acoes button:hover {
+  opacity: 0.85;
+}
+
+.acoes .secundario {
+  background: #555;
+}
+.acoes .secundario:hover {
+  background: #333;
+}

@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Swift+ | Perfil</title>
+  <title>Swift+ | Detalhe do Pedido</title>
   <link rel="icon" href="images/Id.jpg" type="image/png">
 
   <!-- CSS Base -->
   <link rel="stylesheet" href="css/base.css">
   <!-- CSS específico -->
-  <link rel="stylesheet" href="css/perfil.css">
+  <link rel="stylesheet" href="css/pedido-detalhe.css">
 
   <!-- Fonte e ícones -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body class="perfil-page">
+<body class="pedido-detalhe-page">
 
   <!-- Topbar fixa -->
   <header class="topbar">
@@ -34,27 +34,35 @@
   </header>
 
   <!-- Conteúdo -->
-  <main class="perfil-container">
-    <section class="perfil-info">
-      <h1>👤 Meu Perfil</h1>
-      <p><strong>Nome:</strong> Lucas da Luz Morais</p>
-      <p><strong>Email:</strong> lucas@email.com</p>
-      <p><strong>Telefone:</strong> (11) 99999-9999</p>
-    </section>
+  <main class="pedido-detalhe-container">
+    <h1>📦 Pedido #12345</h1>
+    <p>Data: 15/09/2025</p>
+    <p>Status: <span class="status em-andamento">Em andamento</span></p>
 
-    <section class="perfil-opcoes">
-      <h2>Minhas opções</h2>
+    <!-- Itens do pedido -->
+    <section class="itens-pedido">
+      <h2>Itens</h2>
       <ul>
-        <li><a href="pedido.html"><i class="fa-solid fa-box"></i> Meus Pedidos</a></li>
-        <li><a href="cupons.html"><i class="fa-solid fa-ticket"></i> Meus Cupons</a></li>
-        <li><a href="#"><i class="fa-solid fa-heart"></i> Favoritos</a></li>
-        <li><a href="#"><i class="fa-solid fa-user-gear"></i> Editar Perfil</a></li>
+        <li>1x Bife de Chorizo — R$ 85,90</li>
+        <li>2x Picanha Baby — R$ 239,80</li>
+        <li>1x Frango Temperado — R$ 18,99</li>
       </ul>
     </section>
 
-    <div class="logout">
-      <button onclick="window.location.href='login.html'">
-        <i class="fa-solid fa-right-from-bracket"></i> Sair
+    <!-- Totais -->
+    <section class="totais">
+      <p>Subtotal: <span>R$ 344,69</span></p>
+      <p>Frete: <span>R$ 15,00</span></p>
+      <p class="total">Total: <span>R$ 359,69</span></p>
+    </section>
+
+    <!-- Ações -->
+    <div class="acoes">
+      <button onclick="window.location.href='pedido.html'">
+        <i class="fa-solid fa-arrow-left"></i> Voltar
+      </button>
+      <button class="secundario">
+        <i class="fa-solid fa-print"></i> Imprimir
       </button>
     </div>
   </main>

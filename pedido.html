@@ -5,10 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Swift+ | Meus Pedidos</title>
   <link rel="icon" href="images/Id.jpg" type="image/png">
-  <link rel="stylesheet" href="css/style.css">
+
+  <!-- CSS Base -->
+  <link rel="stylesheet" href="css/base.css">
+  <!-- CSS específico -->
+  <link rel="stylesheet" href="css/pedido.css">
+
+  <!-- Fonte e ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
-  <!-- Topbar -->
+<body class="pedido-page">
+
+  <!-- Topbar fixa -->
   <header class="topbar">
     <div class="logo">Swift+</div>
     <nav class="menu">
@@ -25,28 +34,29 @@
   </header>
 
   <!-- Conteúdo -->
-  <main class="pedido-page">
+  <main class="pedido-container">
     <h1>📦 Meus Pedidos</h1>
+    <p class="subtitulo">Acompanhe o status dos seus pedidos</p>
 
     <div class="pedido-card">
-      <h3>Pedido #231</h3>
-      <p>Status: <span class="status pronto">Pronto para retirada</span></p>
-      <ul>
-        <li>Bife de Chorizo Swift — 1un — R$ 85,90</li>
-        <li>Frango Temperado Swift — 2un — R$ 37,98</li>
-      </ul>
-      <p class="total">Total: R$ 123,88</p>
-      <button>Ver detalhes</button>
+      <h3>Pedido #12345</h3>
+      <p>Data: 15/09/2025</p>
+      <p>Status: <span class="status em-andamento">Em andamento</span></p>
+      <button>Ver Detalhes</button>
     </div>
 
     <div class="pedido-card">
-      <h3>Pedido #229</h3>
-      <p>Status: <span class="status em-andamento">Em andamento</span></p>
-      <ul>
-        <li>Peixe Gran Reserva — 1un — R$ 34,95</li>
-      </ul>
-      <p class="total">Total: R$ 34,95</p>
-      <button>Ver detalhes</button>
+      <h3>Pedido #12344</h3>
+      <p>Data: 10/09/2025</p>
+      <p>Status: <span class="status pronto">Pronto para retirada</span></p>
+      <button>Ver Detalhes</button>
+    </div>
+
+    <div class="pedido-card">
+      <h3>Pedido #12343</h3>
+      <p>Data: 02/09/2025</p>
+      <p>Status: <span class="status entregue">Entregue</span></p>
+      <button>Ver Detalhes</button>
     </div>
   </main>
 
@@ -54,5 +64,6 @@
   <footer class="rodape">
     <p>© 2025 Swift+ Personal Shopper</p>
   </footer>
+
 </body>
 </html>

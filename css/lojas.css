@@ -1,0 +1,61 @@
+/* =========================
+   LOJAS PAGE
+   ========================= */
+
+.lojas-container {
+  margin-top: 100px; /* compensar topbar fixa */
+  padding: 40px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+
+.lojas-container h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--primary-orange);
+  text-align: center;
+}
+
+.subtitulo {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.lista-lojas {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-lojas li {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.lista-lojas li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+.lista-lojas strong {
+  color: var(--primary-orange);
+  font-size: 1.2rem;
+}
+
+.lista-lojas a {
+  display: inline-block;
+  margin-top: 8px;
+  color: var(--primary-orange);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.lista-lojas a:hover {
+  text-decoration: underline;
+}

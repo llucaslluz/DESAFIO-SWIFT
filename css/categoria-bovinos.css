@@ -1,0 +1,75 @@
+/* =========================
+   CATEGORIA BOVINOS
+   ========================= */
+
+.categoria-bovinos-page .categoria-container {
+  margin-top: 100px; /* compensar topbar fixa */
+  padding: 40px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.categoria-bovinos-page h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--primary-orange);
+}
+
+.categoria-bovinos-page .subtitulo {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+/* Grid de produtos */
+.categoria-bovinos-page .grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.categoria-bovinos-page .card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.categoria-bovinos-page .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+.categoria-bovinos-page .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.categoria-bovinos-page .card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.categoria-bovinos-page .card .preco {
+  color: var(--primary-orange);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.categoria-bovinos-page .card button {
+  background: var(--primary-red);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.categoria-bovinos-page .card button:hover {
+  background: var(--secondary-red);
+}

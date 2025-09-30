@@ -1,0 +1,91 @@
+/* =========================
+   GLOBAL BASE
+   ========================= */
+
+:root {
+  --primary-red: #b30000;
+  --secondary-red: #800000;
+  --primary-orange: #F26522;
+  --bg-light: #f9f9f9;
+  --bg-dark: #2e1818;
+  --text-dark: #333;
+  --text-light: #fff;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(#2e1818, #3f3232); /* fundo global escuro */
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+/* Topbar */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--bg-dark);
+  color: var(--text-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  z-index: 1000;
+}
+
+.topbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.topbar .menu {
+  display: flex;
+  gap: 15px;
+}
+
+.topbar .menu a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.topbar .menu a:hover,
+.topbar .menu a.active {
+  background: var(--primary-orange);
+  color: #fff;
+}
+
+/* Conteúdo */
+.conteudo {
+  margin-top: 80px; /* espaço por causa da topbar fixa */
+  padding: 20px;
+}
+
+/* Rodapé */
+.rodape {
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  background: linear-gradient(#2e1818, #1a0f0f); /* fundo escuro */
+  color: #fff;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.rodape a {
+  color: var(--primary-orange);
+  text-decoration: none;
+}
+.rodape a:hover {
+  text-decoration: underline;
+}

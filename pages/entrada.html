@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIAP Swift | Challenge JBS</title>
+
+  <!-- CSS da Entrada -->
+  <link rel="stylesheet" href="../css/entrada.css">
+</head>
+<body class="entrada">
+
+  <div class="entrada-container">
+    <div class="logo">FIAP <span>Swift</span></div>
+    <h1 class="frase">Challenge JBS</h1>
+  </div>
+
+  <div class="overlay"></div>
+
+  <script>
+    // Fade out e redireciona
+    setTimeout(() => {
+      document.querySelector(".overlay").classList.add("fade");
+      setTimeout(() => {
+        window.location.href = "../index.html";
+      }, 1200);
+    }, 2500);
+  </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+/* =========================
+   PRODUTO PAGE
+   ========================= */
+
+.produto-container {
+  margin-top: 100px; /* compensar topbar fixa */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 40px;
+  align-items: center;
+}
+
+.produto-imagem img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
+
+.produto-info h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--primary-orange);
+}
+
+.produto-info .descricao {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+.produto-info .preco {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-orange);
+  margin-bottom: 20px;
+}
+
+.acoes {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.acoes input[type="number"] {
+  width: 70px;
+  padding: 8px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  background: #2e1818;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.btn-add {
+  background: linear-gradient(135deg, #F26522, #b30000);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+
+.btn-add:hover {
+  opacity: 0.85;
+}

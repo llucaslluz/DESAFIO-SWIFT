@@ -1,0 +1,93 @@
+/* =========================
+   CATEGORIA MARMITAS
+   ========================= */
+
+.categoria-marmitas-page .categoria-container {
+  margin-top: 100px;          /* compensa topbar fixa */
+  padding: 40px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.categoria-marmitas-page h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: var(--primary-orange);
+}
+
+.categoria-marmitas-page .subtitulo {
+  font-size: 1.05rem;
+  color: #ccc;
+  margin-bottom: 24px;
+}
+
+/* Grid */
+.categoria-marmitas-page .grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+  background: linear-gradient(#3f3232, #2e1818);
+  border-radius: 8px;
+  padding: 24px 18px;
+  border-top: 2px solid #2e1818;
+  border-bottom: 2px solid #2e1818;
+}
+
+/* Card */
+.categoria-marmitas-page .card {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  padding: 14px;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  text-align: center;
+}
+
+.categoria-marmitas-page .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.35);
+  border-color: rgba(255,255,255,0.2);
+}
+
+.categoria-marmitas-page .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.categoria-marmitas-page .card h3 {
+  font-size: 1.05rem;
+  margin: 8px 6px 6px;
+  line-height: 1.3;
+}
+
+.categoria-marmitas-page .card .preco {
+  color: var(--primary-orange);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.categoria-marmitas-page .card button {
+  background: var(--primary-red);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background .25s ease, opacity .25s ease;
+}
+
+.categoria-marmitas-page .card button:hover {
+  background: var(--secondary-red);
+  opacity: .95;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .categoria-marmitas-page .categoria-container { padding: 30px 14px; }
+  .categoria-marmitas-page .grid-produtos { gap: 16px; padding: 18px 12px; }
+  .categoria-marmitas-page .card img { height: 160px; }
+}

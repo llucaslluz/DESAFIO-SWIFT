@@ -3,20 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Swift+ | Produto</title>
-  <link rel="icon" href="images/Id.jpg" type="image/png">
+  <title>Swift+ | Página Base</title>
 
-  <!-- CSS Base -->
-  <link rel="stylesheet" href="css/base.css">
-  <!-- CSS específico -->
-  <link rel="stylesheet" href="css/produto.css">
+  <!-- CSS Global -->
+  <link rel="stylesheet" href="/css/base.css">
 
   <!-- Fonte e ícones -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body class="produto-page">
-
+<body>
   <!-- Topbar fixa -->
   <header class="topbar">
     <div class="logo">Swift+</div>
@@ -33,31 +29,18 @@
     </nav>
   </header>
 
-  <!-- Conteúdo -->
-  <main class="produto-container">
-    <div class="produto-imagem">
-      <img src="images/Bife de Chorizo.jpg" alt="Bife de Chorizo Swift Gran Reserva">
-    </div>
-
-    <div class="produto-info">
-      <h1>Bife de Chorizo Swift Gran Reserva</h1>
-      <p class="descricao">
-        Corte nobre, macio e suculento, perfeito para um churrasco inesquecível. 
-        Peso aproximado: 1kg. Produto congelado.
-      </p>
-      <p class="preco">R$ 85,90 / Kg</p>
-
-      <div class="acoes">
-        <input type="number" min="1" value="1">
-        <button class="btn-add">Adicionar ao Carrinho</button>
-      </div>
-    </div>
+  <!-- Conteúdo dinâmico -->
+  <main class="conteudo">
+    <h1>Bem-vindo ao Swift+ Personal Shopper</h1>
+    <p>Essa é a estrutura base. Aqui vai o conteúdo de cada página.</p>
   </main>
 
   <!-- Rodapé -->
   <footer class="rodape">
-    <p>© 2025 Swift+ Personal Shopper</p>
+    <p>© 2025 Swift+ Personal Shopper | 
+      <a href="faq.html">FAQ</a> | 
+      <a href="#">Política de Privacidade</a>
+    </p>
   </footer>
-
 </body>
 </html>

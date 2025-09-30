@@ -1,0 +1,112 @@
+/* =========================
+   HOME PAGE (padrão original escuro)
+   ========================= */
+
+/* Banner destaque */
+.banner {
+  margin-top: 90px; /* compensa a topbar fixa */
+  background: url("../images/banner.png") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.banner h1 {
+  font-size: 2rem;
+  background-color: var(--primary-orange);
+  border-radius: 10px;
+  margin: 0 auto 10px;
+  padding: 8px 20px;
+  display: inline-block;
+}
+
+
+.banner p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  background-color: var(--primary-orange);
+  border-radius: 6px;
+  padding: 6px 14px;
+  display: inline-block;
+}
+
+/* Barra de categorias */
+.categorias {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: linear-gradient(#949393, #3f3232);
+  padding: 15px;
+  gap: 12px;
+}
+
+.categorias a {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: var(--primary-red);
+  font-weight: 600;
+  background-color: rgba(255, 188, 146, 0.2);
+  transition: all 0.3s ease;
+}
+
+.categorias a:hover {
+  text-decoration: underline;
+}
+
+/* Grid de produtos */
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  background: linear-gradient(#3f3232, #2e1818);
+  border-radius: 8px;
+}
+
+.card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  background: transparent; /* sem branco */
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 1rem;
+  margin: 10px 5px;
+}
+
+.card .preco {
+  color: var(--primary-orange);
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.card button {
+  background: var(--primary-red);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.card button:hover {
+  background: var(--secondary-red);
+}

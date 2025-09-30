@@ -4,115 +4,81 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Swift+ | Carrinho</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body id="page-carrinho" class="d-flex flex-column min-vh-100">
-  
-  <header class="topbar navbar navbar-expand-lg navbar-light sticky-top p-0">
-    <div class="container-fluid">
-      <a class="logo navbar-brand fw-bold ms-3" href="#">Swift+</a>
-      
-      <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <link rel="icon" href="images/Id.jpg" type="image/png">
 
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <nav class="menu navbar-nav">
-          <a class="nav-link" href="index.html">🏠 Início</a>
-          <a class="nav-link" href="categorias.html">📂 Categorias</a>
-          <a class="nav-link" href="pedido.html">📦 Pedido</a>
-          <a class="nav-link active" aria-current="page" href="carrinho.html">🛍️ Carrinho</a>
-          <a class="nav-link" href="perfil.html">👤 Perfil</a>
-          <a class="nav-link" href="receitas.html">🍴 Receitas</a>
-          <a class="nav-link" href="cupons.html">🎟️ Cupons</a>
-          <a class="nav-link" href="lojas.html">📍 Lojas</a>
-          <a class="nav-link" href="faq.html">❓ FAQ</a>
-        </nav>
-      </div>
-    </div>
+  <!-- CSS Base -->
+  <link rel="stylesheet" href="css/base.css">
+  <!-- CSS específico -->
+  <link rel="stylesheet" href="css/carrinho.css">
+
+  <!-- Fonte e ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="carrinho-page">
+
+  <!-- Topbar fixa -->
+  <header class="topbar">
+    <div class="logo">Swift+</div>
+    <nav class="menu">
+      <a href="index.html">🏠 Início</a>
+      <a href="categorias.html">📂 Categorias</a>
+      <a href="pedido.html">📦 Pedido</a>
+      <a href="carrinho.html">🛍️ Carrinho</a>
+      <a href="perfil.html">👤 Perfil</a>
+      <a href="receitas.html">🍴 Receitas</a>
+      <a href="cupons.html">🎟️ Cupons</a>
+      <a href="lojas.html">📍 Lojas</a>
+      <a href="faq.html">❓ FAQ</a>
+    </nav>
   </header>
 
-  <main class="carrinho container flex-grow-1">
-    <h1 class="mb-4">🛒 Seu Carrinho</h1>
+  <!-- Conteúdo -->
+  <main class="carrinho-container">
+    <h1>🛍️ Seu Carrinho</h1>
 
-    <div class="row">
-      <div class="col-lg-8">
-        
-        <div class="carrinho-itens">
-          
-          <div class="item d-flex align-items-center">
-            <div class="col-3 col-sm-2 me-3">
-                <img src=".//images/Bife de Chorizo.jpg" alt="Bife de Chorizo" class="img-fluid rounded">
-            </div>
-            
-            <div class="col-6 col-sm-7 d-flex flex-column justify-content-center">
-              <h3>Bife de Chorizo Swift Gran Reserva</h3>
-              <p>R$ 85,90 / Kg</p>
-              
-              <div class="qtd d-flex align-items-center">
-                <button class="btn btn-sm btn-outline-secondary me-2">-</button>
-                <span>1</span>
-                <button class="btn btn-sm btn-outline-secondary ms-2">+</button>
-              </div>
-            </div>
-
-            <p class="subtotal">R$ 85,90</p>
-          </div>
-
-          <div class="item d-flex align-items-center">
-            <div class="col-3 col-sm-2 me-3">
-              <img src=".//images/Frango Grelhado.jpg" alt="Frango Temperado" class="img-fluid rounded">
-            </div>
-            
-            <div class="col-6 col-sm-7 d-flex flex-column justify-content-center">
-              <h3>Frango Temperado Swift</h3>
-              <p>R$ 18,99</p>
-              
-              <div class="qtd d-flex align-items-center">
-                <button class="btn btn-sm btn-outline-secondary me-2">-</button>
-                <span>2</span>
-                <button class="btn btn-sm btn-outline-secondary ms-2">+</button>
-              </div>
-            </div>
-            
-            <p class="subtotal">R$ 37,98</p>
+    <div class="carrinho-itens">
+      <!-- Item 1 -->
+      <div class="item">
+        <img src="images/Bife de Chorizo.jpg" alt="Bife de Chorizo">
+        <div class="info">
+          <h3>Bife de Chorizo Swift Gran Reserva</h3>
+          <p class="preco">R$ 85,90 / Kg</p>
+          <div class="acoes">
+            <input type="number" min="1" value="1">
+            <button class="btn-remover">Remover</button>
           </div>
         </div>
-        
-        <div class="frete-progresso">
-          <p>Faltam <strong>R$ 76,12</strong> para você ganhar frete grátis!</p>
-          <div class="barra progress" role="progressbar" aria-label="Progresso para frete grátis" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
-            <div class="progress-bar preenchido" style="width: 60%"></div>
-          </div>
-        </div>
-
       </div>
 
-      <div class="col-lg-4 mt-4 mt-lg-0">
-        <section class="resumo">
-          <h2>Resumo da compra</h2>
-          
-          <p class="d-flex justify-content-between">Subtotal: <span>R$ 123,88</span></p>
-          <p class="d-flex justify-content-between border-bottom pb-3">Frete: <span>R$ 15,00</span></p>
-          
-          <p class="total d-flex justify-content-between">Total: <span>R$ 138,88</span></p>
-
-          <div class="cupom input-group">
-            <input type="text" class="form-control" placeholder="Insira um cupom" aria-label="Insira um cupom">
-            <button class="btn btn-outline-secondary" type="button">Aplicar</button>
+      <!-- Item 2 -->
+      <div class="item">
+        <img src="images/Picanha Swift.jpg" alt="Picanha Swift">
+        <div class="info">
+          <h3>Picanha Ponta (Baby) Swift Legado</h3>
+          <p class="preco">R$ 119,90</p>
+          <div class="acoes">
+            <input type="number" min="1" value="2">
+            <button class="btn-remover">Remover</button>
           </div>
-
-          <button class="btn-pagamento">Continuar para o pagamento</button>
-        </section>
+        </div>
       </div>
     </div>
+
+    <!-- Resumo -->
+    <aside class="resumo">
+      <h2>Resumo do Pedido</h2>
+      <p>Subtotal: <span>R$ 325,70</span></p>
+      <p>Frete: <span>R$ 15,00</span></p>
+      <p class="total">Total: <span>R$ 340,70</span></p>
+      <button class="btn-finalizar">Finalizar Compra</button>
+    </aside>
   </main>
 
+  <!-- Rodapé -->
   <footer class="rodape">
-    <p class="mb-0 text-muted">© 2025 Swift+ Personal Shopper | <a href="#" class="text-decoration-none">FAQ</a> | <a href="#" class="text-decoration-none">Política de Privacidade</a></p>
+    <p>© 2025 Swift+ Personal Shopper</p>
   </footer>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>

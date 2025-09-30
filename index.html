@@ -1,95 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Swift+ Personal Shopper</title>
-  <link rel="icon" href="images/Id.jpg" type="image/png">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/Id.jpg" type="image/png" />
+
+  <!-- CSS Base -->
+  <link rel="stylesheet" href="css/base.css" />
+  <!-- CSS da Home (conteúdo da página) -->
+  <link rel="stylesheet" href="css/home.css" />
+
+  <!-- Fonte e ícones (para a topbar nova) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
-<body>
-  <div class="header">
-    <!-- Topbar fixa -->
-    <header class="topbar">
-      <div class="logo">Swift+</div>
-      <nav class="menu">
-        <a href="index.html">🏠 Início</a>
-        <a href="categorias.html">📂 Categorias</a>
-        <a href="pedido.html">📦 Pedido</a>
-        <a href="carrinho.html">🛍️ Carrinho</a>
-        <a href="perfil.html">👤 Perfil</a>
-        <a href="receitas.html">🍴 Receitas</a>
-        <a href="cupons.html">🎟️ Cupons</a>
-        <a href="lojas.html">📍 Lojas</a>
-        <a href="faq.html">❓ FAQ</a>
-      </nav>
-    </header>
-    <!-- Banner destaque -->
-    <section class="banner">
-      <h1>🔥 Tudo para o seu churrasco Swift!</h1>
-      <p>Aproveite ofertas exclusivas online</p>
-    </section>
+<body class="home">
 
-    <!-- Barra de categorias -->
-    <nav class="categorias">
-      <a href="#">🥩 Bovinos</a>
-      <a href="#">🍗 Aves</a>
-      <a href="#">🐖 Suínos</a>
-      <a href="#">🐟 Pescados</a>
-      <a href="#">🥦 Vegetais</a>
-      <a href="#">🍰 Sobremesas</a>
+  <!-- Topbar fixa (NOVA) -->
+  <header class="topbar">
+    <div class="logo">Swift+</div>
+    <nav class="menu">
+      <a href="index.html">🏠 Início</a>
+      <a href="categorias.html">📂 Categorias</a>
+      <a href="pedido.html">📦 Pedido</a>
+      <a href="carrinho.html">🛍️ Carrinho</a>
+      <a href="perfil.html">👤 Perfil</a>
+      <a href="receitas.html">🍴 Receitas</a>
+      <a href="cupons.html">🎟️ Cupons</a>
+      <a href="lojas.html">📍 Lojas</a>
+      <a href="faq.html">❓ FAQ</a>
     </nav>
-  </div>
-  <div class="main-content">
-    <!-- Grid de produtos -->
-    <main class="produtos">
-      <div class="card">
-        <img src="/images/Bife de Chorizo.jpg" alt="Bife de Chorizo">
-        <h3>Bife de Chorizo Swift Gran Reserva</h3>
-        <p class="preco">R$ 85,90 / Kg</p>
-        <button>Adicionar</button>
-      </div>
+  </header>
 
-      <div class="card">
-        <img src="/images/Picanha Swift.jpg" alt="Picanha Swift">
-        <h3>Picanha Ponta (Baby) Swift Legado</h3>
-        <p class="preco">R$ 119,90</p>
-        <button>Adicionar</button>
-      </div>
+  <!-- Banner destaque -->
+  <section class="banner">
+    <h1>🔥 Tudo para o seu churrasco Swift!</h1>
+    <p>Aproveite ofertas exclusivas online</p>
+  </section>
 
-      <div class="card">
-        <img src="/images/Filé Mignon Swift.jpg" alt="Filé Mignon">
-        <h3>Medalhão De Filé Mignon Swift</h3>
-        <p class="preco">R$ 107,90</p>
-        <button>Adicionar</button>
-      </div>
+  <!-- Barra de categorias -->
+  <nav class="categorias">
+    <a href="#">🥩 Bovinos</a>
+    <a href="#">🍗 Aves</a>
+    <a href="#">🐖 Suínos</a>
+    <a href="#">🐟 Pescados</a>
+    <a href="#">🥦 Vegetais</a>
+    <a href="#">🍰 Sobremesas</a>
+  </nav>
 
-      <div class="card">
-        <img src="/images/Costela Swift.jpg" alt="Costela Premium Swift">
-        <h3>Costela Premium Swift</h3>
-        <p class="preco">R$ 69,90</p>
-        <button>Adicionar</button>
-      </div>
+  <!-- Grid de produtos -->
+  <main class="produtos">
+    <div class="card">
+      <img src="images/Bife de Chorizo.jpg" alt="Bife de Chorizo" />
+      <h3>Bife de Chorizo Swift Gran Reserva</h3>
+      <p class="preco">R$ 85,90 / Kg</p>
+      <button>Adicionar</button>
+    </div>
 
-      <div class="card">
-        <img src="/images/Frango Grelhado.jpg" alt="Frango Temperado">
-        <h3>Frango Temperado Swift</h3>
-        <p class="preco">R$ 18,99</p>
-        <button>Adicionar</button>
-      </div>
+    <div class="card">
+      <img src="images/Picanha Swift.jpg" alt="Picanha Swift" />
+      <h3>Picanha Ponta (Baby) Swift Legado</h3>
+      <p class="preco">R$ 119,90</p>
+      <button>Adicionar</button>
+    </div>
 
-      <div class="card">
-        <img src="/images/Peixe Grelhado.jpg" alt="Salmão temperado">
-        <h3>Salmão Temperado</h3>
-        <p class="preco">R$ 36,90</p>
-        <button>Adicionar</button>
-      </div>
+    <div class="card">
+      <img src="images/Filé Mignon Swift.jpg" alt="Filé Mignon" />
+      <h3>Medalhão De Filé Mignon Swift</h3>
+      <p class="preco">R$ 107,90</p>
+      <button>Adicionar</button>
+    </div>
 
-    </main>
-  </div>
-    <!-- Rodapé -->
-    <footer class="footer">
-      <p>© 2025 Swift+ Personal Shopper</p>
-    </footer>
+    <div class="card">
+      <img src="images/Costela Swift.jpg" alt="Costela Premium Swift" />
+      <h3>Costela Premium Swift</h3>
+      <p class="preco">R$ 69,90</p>
+      <button>Adicionar</button>
+    </div>
 
-</body>    
+    <div class="card">
+      <img src="images/Frango Grelhado.jpg" alt="Frango Temperado" />
+      <h3>Frango Temperado Swift</h3>
+      <p class="preco">R$ 18,99</p>
+      <button>Adicionar</button>
+    </div>
+
+    <div class="card">
+      <img src="images/Peixe Grelhado.jpg" alt="Salmão temperado" />
+      <h3>Salmão Temperado</h3>
+      <p class="preco">R$ 36,90</p>
+      <button>Adicionar</button>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <p>© 2025 Swift+ Personal Shopper</p>
+  </footer>
+
+</body>
+</html>

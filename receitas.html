@@ -5,42 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Swift+ | Receitas</title>
   <link rel="icon" href="images/Id.jpg" type="image/png">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<header class="topbar">
-  <div class="logo">Swift+</div>
-  <nav class="menu">
-    <a href="index.html">🏠 Início</a>
-    <a href="categorias.html">📂 Categorias</a>
-    <a href="pedido.html">📦 Pedido</a>
-    <a href="carrinho.html">🛍️ Carrinho</a>
-    <a href="perfil.html">👤 Perfil</a>
-    <a href="receitas.html">🍴 Receitas</a>
-    <a href="cupons.html">🎟️ Cupons</a>
-    <a href="lojas.html">📍 Lojas</a>
-    <a href="faq.html">❓ FAQ</a>
-  </nav>
-</header>
 
-  <main class="receitas-page">
-    <h1>🍴 Receitas Swift+</h1>
+  <!-- CSS Base -->
+  <link rel="stylesheet" href="css/base.css">
+  <!-- CSS específico -->
+  <link rel="stylesheet" href="css/receitas.css">
+
+  <!-- Fonte e ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="receitas-page">
+
+  <!-- Topbar fixa -->
+  <header class="topbar">
+    <div class="logo">Swift+</div>
+    <nav class="menu">
+      <a href="index.html">🏠 Início</a>
+      <a href="categorias.html">📂 Categorias</a>
+      <a href="pedido.html">📦 Pedido</a>
+      <a href="carrinho.html">🛍️ Carrinho</a>
+      <a href="perfil.html">👤 Perfil</a>
+      <a href="receitas.html">🍴 Receitas</a>
+      <a href="cupons.html">🎟️ Cupons</a>
+      <a href="lojas.html">📍 Lojas</a>
+      <a href="faq.html">❓ FAQ</a>
+    </nav>
+  </header>
+
+  <!-- Conteúdo -->
+  <main class="receitas-container">
+    <h1>🍴 Receitas Swift</h1>
+    <p class="subtitulo">Inspire-se com nossas sugestões para aproveitar melhor os produtos Swift+</p>
+
+    <!-- Grid de receitas -->
     <div class="grid-receitas">
-      <div class="card">
-        <h3>Tortinha de Frutas Vermelhas</h3>
-        <p>Nível: Iniciante</p>
-        <p>Ingredientes: morango, amora, açúcar, ovos...</p>
+      <div class="card-receita">
+        <img src="images/receita1.jpg" alt="Receita 1">
+        <h3>Picanha na Brasa</h3>
+        <button>Ver Receita</button>
       </div>
-      <div class="card">
-        <h3>Omega Burger XYZ</h3>
-        <p>Nível: Intermediário</p>
-        <p>Ingredientes: contrafilé, pimenta, queijo mussarela...</p>
+      <div class="card-receita">
+        <img src="images/receita2.jpg" alt="Receita 2">
+        <h3>Tilápia Assada</h3>
+        <button>Ver Receita</button>
+      </div>
+      <div class="card-receita">
+        <img src="images/receita3.jpg" alt="Receita 3">
+        <h3>Frango ao Molho Mostarda</h3>
+        <button>Ver Receita</button>
+      </div>
+      <div class="card-receita">
+        <img src="images/receita4.jpg" alt="Receita 4">
+        <h3>Costela Suína Barbecue</h3>
+        <button>Ver Receita</button>
       </div>
     </div>
   </main>
 
+  <!-- Rodapé -->
   <footer class="rodape">
-    <p>© 2025 Swift+ Personal Shopper | <a href="faq.html">FAQ</a></p>
+    <p>© 2025 Swift+ Personal Shopper</p>
   </footer>
+
 </body>
 </html>

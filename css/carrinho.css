@@ -1,0 +1,119 @@
+/* =========================
+   CARRINHO PAGE
+   ========================= */
+
+.carrinho-container {
+  margin-top: 100px; /* compensar topbar fixa */
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.carrinho-container h1 {
+  grid-column: 1 / -1;
+  margin-bottom: 20px;
+  color: var(--primary-orange);
+}
+
+/* Lista de itens */
+.carrinho-itens .item {
+  display: flex;
+  gap: 20px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.carrinho-itens img {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.item .info h3 {
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.item .info .preco {
+  color: var(--primary-orange);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.acoes {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.acoes input[type="number"] {
+  width: 60px;
+  padding: 6px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  background: #2e1818;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.btn-remover {
+  background: #a30000;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.btn-remover:hover {
+  opacity: 0.8;
+}
+
+/* Resumo */
+.resumo {
+  background: rgba(0,0,0,0.4);
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  height: fit-content;
+}
+
+.resumo h2 {
+  margin-bottom: 15px;
+  color: var(--primary-orange);
+}
+
+.resumo p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.resumo .total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.btn-finalizar {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #F26522, #b30000);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: opacity 0.3s;
+}
+.btn-finalizar:hover {
+  opacity: 0.85;
+}

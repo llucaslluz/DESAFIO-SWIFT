@@ -1,0 +1,95 @@
+/* =========================
+   PEDIDO DETALHE PAGE
+   ========================= */
+
+.pedido-detalhe-container {
+  margin-top: 100px; /* compensar topbar fixa */
+  padding: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+
+.pedido-detalhe-container h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--primary-orange);
+}
+
+.pedido-detalhe-container p {
+  margin-bottom: 8px;
+  color: #ddd;
+}
+
+/* Itens */
+.itens-pedido {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.itens-pedido h2 {
+  margin-bottom: 12px;
+  color: var(--primary-orange);
+}
+
+.itens-pedido ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.itens-pedido li {
+  margin-bottom: 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 6px;
+}
+
+/* Totais */
+.totais {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.totais p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.totais .total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+/* Ações */
+.acoes {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.acoes button {
+  background: var(--primary-red);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.3s;
+}
+
+.acoes button:hover {
+  opacity: 0.85;
+}
+
+.acoes .secundario {
+  background: #555;
+}
+
+.acoes .secundario:hover {
+  background: #333;
+}

@@ -5,35 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Swift+ | Lojas</title>
   <link rel="icon" href="images/Id.jpg" type="image/png">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<header class="topbar">
-  <div class="logo">Swift+</div>
-  <nav class="menu">
-    <a href="index.html">🏠 Início</a>
-    <a href="categorias.html">📂 Categorias</a>
-    <a href="pedido.html">📦 Pedido</a>
-    <a href="carrinho.html">🛍️ Carrinho</a>
-    <a href="perfil.html">👤 Perfil</a>
-    <a href="receitas.html">🍴 Receitas</a>
-    <a href="cupons.html">🎟️ Cupons</a>
-    <a href="lojas.html">📍 Lojas</a>
-    <a href="faq.html">❓ FAQ</a>
-  </nav>
-</header>
 
-  <main class="lojas">
-    <h1>📍 Lojas Swift+</h1>
-    <ul>
-      <li><strong>Loja Morumbi</strong> – Rua X, 123 – São Paulo/SP – Retirada disponível</li>
-      <li><strong>Loja Pirituba</strong> – Av. Y, 456 – São Paulo/SP – Retirada disponível</li>
-      <li><strong>Loja Jaraguá</strong> – Av. Z, 789 – São Paulo/SP – Retirada disponível</li>
+  <!-- CSS Base -->
+  <link rel="stylesheet" href="css/base.css">
+  <!-- CSS específico -->
+  <link rel="stylesheet" href="css/lojas.css">
+
+  <!-- Fonte e ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="lojas-page">
+
+  <!-- Topbar fixa -->
+  <header class="topbar">
+    <div class="logo">Swift+</div>
+    <nav class="menu">
+      <a href="index.html">🏠 Início</a>
+      <a href="categorias.html">📂 Categorias</a>
+      <a href="pedido.html">📦 Pedido</a>
+      <a href="carrinho.html">🛍️ Carrinho</a>
+      <a href="perfil.html">👤 Perfil</a>
+      <a href="receitas.html">🍴 Receitas</a>
+      <a href="cupons.html">🎟️ Cupons</a>
+      <a href="lojas.html">📍 Lojas</a>
+      <a href="faq.html">❓ FAQ</a>
+    </nav>
+  </header>
+
+  <!-- Conteúdo -->
+  <main class="lojas-container">
+    <h1>📍 Nossas Lojas</h1>
+    <p class="subtitulo">Encontre a loja Swift mais próxima de você</p>
+
+    <ul class="lista-lojas">
+      <li>
+        <strong>Swift Moema</strong><br>
+        Av. Ibirapuera, 1234 - São Paulo/SP<br>
+        Tel: (11) 3333-4444<br>
+        <a href="https://maps.google.com" target="_blank">Ver no mapa</a>
+      </li>
+      <li>
+        <strong>Swift Pinheiros</strong><br>
+        Rua dos Pinheiros, 567 - São Paulo/SP<br>
+        Tel: (11) 2222-3333<br>
+        <a href="https://maps.google.com" target="_blank">Ver no mapa</a>
+      </li>
+      <li>
+        <strong>Swift Campinas</strong><br>
+        Av. Brasil, 890 - Campinas/SP<br>
+        Tel: (19) 4444-5555<br>
+        <a href="https://maps.google.com" target="_blank">Ver no mapa</a>
+      </li>
     </ul>
   </main>
 
+  <!-- Rodapé -->
   <footer class="rodape">
     <p>© 2025 Swift+ Personal Shopper</p>
   </footer>
+
 </body>
 </html>
