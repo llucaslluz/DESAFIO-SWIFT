@@ -59,3 +59,16 @@
 .lista-lojas a:hover {
   text-decoration: underline;
 }
+
+.mapa-lojas {
+  margin-bottom: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+.lista-lojas li {
+  cursor: pointer;
+}
+.lista-lojas li:hover {
+  background: rgba(255,255,255,0.1);
+}
