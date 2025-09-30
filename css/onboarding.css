@@ -1,0 +1,36 @@
+/* Overlay ocupa a tela toda */
+.ob-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.ob-overlay.hidden { display: none; }
+
+/* Modal central */
+.ob-modal {
+  background: #fff;
+  color: #111;
+  padding: 24px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.3);
+}
+.ob-modal h2 { margin-top: 0; }
+.ob-modal form label { display:block; margin:12px 0; }
+.ob-modal input, .ob-modal select {
+  width: 100%; padding: 8px; margin-top: 4px;
+  border:1px solid #ddd; border-radius: 6px;
+}
+.ob-modal button {
+  margin-top: 16px;
+  width: 100%;
+  padding: 10px;
+  background: var(--accent, #3b82f6);
+  color:#fff; border:none; border-radius:6px;
+  font-weight: 600; cursor:pointer;
+}

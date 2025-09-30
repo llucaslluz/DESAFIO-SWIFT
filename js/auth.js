@@ -33,11 +33,11 @@ function handleCadastro(e) {
   // Cria objeto usuário
   const user = { nome, email, telefone, senha };
 
-  // Salva no localStorage
-  localStorage.setItem("swift_user", JSON.stringify(user));
+  // Salva no localStorage usando o email como chave única
+  localStorage.setItem(`swift_user_${email}`, JSON.stringify(user));
 
   alert("✅ Cadastro realizado com sucesso!");
-  window.location.href = "login.html"; // redireciona
+  window.location.href = "login.html";
 }
 
 // ============ Login ============
@@ -52,19 +52,23 @@ function handleLogin(e) {
     return;
   }
 
-  // Busca usuário salvo
-  const savedUser = JSON.parse(localStorage.getItem("swift_user"));
+  const savedUser = JSON.parse(localStorage.getItem(`swift_user_${email}`));
 
   if (!savedUser) {
-    alert("❌ Nenhum usuário cadastrado. Cadastre-se primeiro.");
+    alert("❌ Nenhum usuário cadastrado com esse e-mail.");
     return;
   }
 
-  if (savedUser.email === email && savedUser.senha === senha) {
+  if (savedUser.senha === senha) {
     alert(`🎉 Bem-vindo de volta, ${savedUser.nome}!`);
-    window.location.href = "/pages/entrada.html"; // redireciona para a home/vitrine
+
+    // Marca o usuário atual
+    localStorage.setItem("swift.currentUser", email);
+
+    window.location.href = "/pages/entrada.html";
   } else {
     alert("❌ E-mail ou senha incorretos.");
   }
 }
+
 

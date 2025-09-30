@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/base.css" />
   <!-- CSS da Home (conteúdo da página) -->
   <link rel="stylesheet" href="css/home.css" />
-
+  <link rel="stylesheet" href="/css/onboarding.css" />
   <!-- Fonte e ícones (para a topbar nova) -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -98,6 +98,43 @@
   <footer class="rodape">
     <p>© 2025 Swift+ Personal Shopper</p>
   </footer>
+<!-- Overlay Onboarding -->
+  <div id="onboarding-overlay" class="ob-overlay hidden">
+    <div class="ob-modal">
+      <h2>Bem-vindo ao Swift+</h2>
+      <p>Configure suas preferências rápidas</p>
+
+      <form id="onboarding-form">
+        <label>CEP
+          <input type="text" id="ob-cep" placeholder="00000-000" required>
+        </label>
+
+        <label>Modalidade
+          <select id="ob-modalidade" required>
+            <option value="">Selecione</option>
+            <option value="expressa">Entrega Expressa</option>
+            <option value="agendada">Entrega Agendada</option>
+            <option value="retirada">Retirada em Loja</option>
+          </select>
+        </label>
+
+        <label>Benefícios
+          <div>
+            <input type="checkbox" id="ob-cupom" checked> Cupom de boas-vindas
+            <br>
+            <input type="checkbox" id="ob-cashback"> Cashback
+            <br>
+            <input type="checkbox" id="ob-whatsapp"> Ofertas por WhatsApp
+          </div>
+        </label>
+
+        <button type="submit">Salvar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="/js/onboarding.js"></script>
+
 
 </body>
 </html>

@@ -1,68 +1,134 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Swift+ | Onboarding</title>
-  <link rel="icon" href="images/Id.jpg" type="image/png">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <title>Swift+ — Onboarding</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/onboarding.css" />
 </head>
 <body>
-  <!-- Topbar -->
-  <header class="topbar">
-    <div class="logo">Swift+</div>
-    <nav class="menu">
-      <a href="index.html">🏠 Início</a>
-      <a href="categorias.html">📂 Categorias</a>
-      <a href="pedido.html">📦 Pedido</a>
-      <a href="carrinho.html">🛍️ Carrinho</a>
-      <a href="perfil.html">👤 Perfil</a>
-      <a href="receitas.html">🍴 Receitas</a>
-      <a href="cupons.html">🎟️ Cupons</a>
-      <a href="lojas.html">📍 Lojas</a>
-      <a href="faq.html">❓ FAQ</a>
-    </nav>
-  </header>
+  <main class="ob-container" aria-labelledby="ob-title">
+    <header class="ob-header">
+      <h1 id="ob-title">Bem-vindo ao Swift+ 👋</h1>
+      <p class="ob-sub">Vamos personalizar sua experiência em 1 minutinho.</p>
+      <ol class="ob-steps" aria-label="Etapas">
+        <li class="is-active" data-step="1">CEP</li>
+        <li data-step="2">Entrega</li>
+        <li data-step="3">Vantagens</li>
+      </ol>
+      <div class="ob-progress"><span class="ob-progress-bar" style="width: 33%"></span></div>
+    </header>
 
-  <!-- Conteúdo -->
-  <main class="onboarding">
-    <h1>👋 Bem-vindo ao Swift+ Personal Shopper</h1>
-    <p>Antes de começar, escolha sua região e modalidade de entrega para personalizar sua experiência.</p>
+    <!-- STEP 1: CEP -->
+    <section class="ob-card" data-step="1">
+      <h2>Qual é o CEP de entrega?</h2>
+      <p>Usamos o CEP para calcular frete, prazos e lojas próximas.</p>
+      <form id="form-cep" class="ob-form" autocomplete="off" novalidate>
+        <label for="cep">CEP</label>
+        <div class="ob-row">
+          <input id="cep" name="cep" inputmode="numeric" maxlength="9" placeholder="00000-000" required />
+          <button type="button" id="btnBuscaCEP" class="ob-secondary">Buscar CEP</button>
+        </div>
+        <p id="cep-erro" class="ob-error" role="alert" hidden>CEP inválido. Digite no formato 00000-000.</p>
 
-    <!-- CEP -->
-    <section class="onb-cep">
-      <h2>📍 Informe seu CEP</h2>
-      <input type="text" placeholder="Digite seu CEP">
-      <button>Confirmar</button>
+        <div id="endereco-preview" class="ob-address" hidden>
+          <strong>Endereço detectado:</strong>
+          <p id="endereco-texto"></p>
+        </div>
+      </form>
+
+      <div class="ob-actions">
+        <button class="ob-primary" id="next-1" disabled>Continuar</button>
+      </div>
     </section>
 
-    <!-- Modalidade de entrega -->
-    <section class="onb-entrega">
-      <h2>🚚 Escolha a modalidade de entrega</h2>
-      <label><input type="radio" name="entrega" checked> Agendada</label><br>
-      <label><input type="radio" name="entrega"> Padrão</label><br>
-      <label><input type="radio" name="entrega"> Expressa</label>
+    <!-- STEP 2: MODALIDADE -->
+    <section class="ob-card" data-step="2" hidden>
+      <h2>Como você prefere receber?</h2>
+      <fieldset class="ob-options" id="modalidade-group">
+        <label class="ob-option">
+          <input type="radio" name="modalidade" value="expressa" />
+          <span>Entrega Expressa <small>(mais rápida)</small></span>
+        </label>
+        <label class="ob-option">
+          <input type="radio" name="modalidade" value="agendada" />
+          <span>Entrega Agendada <small>(você escolhe dia e janela)</small></span>
+        </label>
+        <label class="ob-option">
+          <input type="radio" name="modalidade" value="retirada" />
+          <span>Retirada na Loja <small>(Click & Collect)</small></span>
+        </label>
+      </fieldset>
+
+      <div id="retirada-extra" class="ob-card ob-nested" hidden>
+        <h3>Retirada: escolha a loja</h3>
+        <p>Você pode <a href="../lojas.html" class="ob-link">abrir o Localizador de Lojas</a> para selecionar a unidade.</p>
+        <div class="ob-row">
+          <label for="codigo-loja" class="sr-only">Código/Nome da loja</label>
+          <input id="codigo-loja" placeholder="Ex.: SWIFT-MORUMBI" />
+          <button id="btn-validar-loja" type="button" class="ob-secondary">Validar loja</button>
+        </div>
+        <p id="loja-status" class="ob-hint">Dica: se não souber agora, pode salvar sem loja e escolher no checkout.</p>
+      </div>
+
+      <div class="ob-actions">
+        <button class="ob-ghost" id="back-2">Voltar</button>
+        <button class="ob-primary" id="next-2" disabled>Continuar</button>
+      </div>
     </section>
 
-    <!-- Benefícios do online -->
-    <section class="onb-beneficios">
-      <h2>✨ Vantagens de comprar online</h2>
-      <ul>
-        <li>🎁 Descontos exclusivos</li>
-        <li>🚚 Frete grátis acima de R$ 150</li>
-        <li>💳 Cashback em compras selecionadas</li>
+    <!-- STEP 3: BENEFÍCIOS -->
+    <section class="ob-card" data-step="3" hidden>
+      <h2>Ative seus benefícios do online</h2>
+      <ul class="ob-benefits">
+        <li>
+          <label class="ob-switch">
+            <input type="checkbox" id="b-cupom" checked />
+            <span class="slider"></span>
+          </label>
+          Aplicar <strong>cupom de boas-vindas</strong> automaticamente (ex.: <code>LOJA10</code>)
+        </li>
+        <li>
+          <label class="ob-switch">
+            <input type="checkbox" id="b-cashback" />
+            <span class="slider"></span>
+          </label>
+          Habilitar <strong>cashback</strong> em compras online
+        </li>
+        <li>
+          <label class="ob-switch">
+            <input type="checkbox" id="b-whatsapp" />
+            <span class="slider"></span>
+          </label>
+          Receber ofertas por <strong>WhatsApp</strong>
+        </li>
       </ul>
+
+      <aside class="ob-note">
+        <strong>Por que isso é bom?</strong>
+        <ul>
+          <li>Preços e cupons exclusivos do online</li>
+          <li>Entrega expressa ou retirada na loja</li>
+          <li>Recomendações personalizadas</li>
+        </ul>
+      </aside>
+
+      <div class="ob-actions">
+        <button class="ob-ghost" id="back-3">Voltar</button>
+        <button class="ob-primary" id="finish">Concluir e salvar</button>
+      </div>
     </section>
 
-    <!-- Botão continuar -->
-    <button class="btn-continuar" onclick="window.location.href='index.html'">
-      Continuar para a Vitrine
-    </button>
+    <!-- DONE -->
+    <section class="ob-card ob-done" data-step="done" hidden>
+      <h2>Preferências salvas ✅</h2>
+      <p>Personalizamos sua experiência com base no seu CEP e preferências de entrega.</p>
+      <a href="../index.html" class="ob-primary-link">Ir para a Home</a>
+    </section>
   </main>
 
-  <!-- Rodapé -->
-  <footer class="rodape">
-    <p>© 2025 Swift+ Personal Shopper</p>
-  </footer>
+  <script src="./onboarding.js" defer></script>
 </body>
 </html>
