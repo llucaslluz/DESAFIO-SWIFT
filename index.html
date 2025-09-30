@@ -10,14 +10,14 @@
   <link rel="stylesheet" href="css/base.css" />
   <!-- CSS da Home (conteúdo da página) -->
   <link rel="stylesheet" href="css/home.css" />
-  <link rel="stylesheet" href="/css/onboarding.css" />
-  <!-- Fonte e ícones (para a topbar nova) -->
+  <link rel="stylesheet" href="css/onboarding.css" />
+  <!-- Fonte e ícones -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body class="home">
 
-  <!-- Topbar fixa (NOVA) -->
+  <!-- Topbar fixa -->
   <header class="topbar">
     <div class="logo">Swift+</div>
     <nav class="menu">
@@ -98,7 +98,8 @@
   <footer class="rodape">
     <p>© 2025 Swift+ Personal Shopper</p>
   </footer>
-<!-- Overlay Onboarding -->
+
+  <!-- Overlay Onboarding -->
   <div id="onboarding-overlay" class="ob-overlay hidden">
     <div class="ob-modal">
       <h2>Bem-vindo ao Swift+</h2>
@@ -118,6 +119,19 @@
           </select>
         </label>
 
+        <!-- Bloco extra para retirada -->
+        <div id="retirada-extra" class="ob-card ob-nested" hidden>
+          <h3>Retirada: escolha a loja</h3>
+          <p>
+            <button type="button" id="btn-escolher-loja" class="ob-secondary">
+              Escolher Loja
+            </button>
+          </p>
+          <p id="loja-selecionada" class="ob-hint">
+            Nenhuma loja escolhida ainda.
+          </p>
+        </div>
+
         <label>Benefícios
           <div>
             <input type="checkbox" id="ob-cupom" checked> Cupom de boas-vindas
@@ -133,12 +147,11 @@
     </div>
   </div>
 
-  <script src="/js/onboarding.js"></script>
+  <script src="js/onboarding.js"></script>
 
   <!-- Botão flutuante do WhatsApp -->
-<a href="https://wa.me/55031995543311" target="_blank" class="whatsapp-float" aria-label="Falar com atendente no WhatsApp">
-  <i class="fa-brands fa-whatsapp"></i>
-</a>
-
+  <a href="https://wa.me/55031995543311" target="_blank" class="whatsapp-float" aria-label="Falar com atendente no WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 </body>
 </html>

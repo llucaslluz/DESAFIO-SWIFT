@@ -32,3 +32,19 @@ document.addEventListener("DOMContentLoaded", () => {
     alert("✅ Preferências salvas!");
   });
 });
+
+// Quando o usuário clicar em "Escolher Loja"
+document.getElementById("btn-escolher-loja").addEventListener("click", () => {
+  // Guarda que está escolhendo a loja no onboarding
+  localStorage.setItem("swift.tempEscolhendoLoja", "true");
+  window.location.href = "lojas.html"; // vai para a tela de lojas
+});
+
+// Quando voltar da página de lojas
+const lojaSelecionada = localStorage.getItem("swift.lojaSelecionada");
+if (lojaSelecionada) {
+  document.getElementById("loja-selecionada").textContent =
+    `Loja escolhida: ${lojaSelecionada}`;
+  state.loja = lojaSelecionada; // já guarda no estado do onboarding
+}
+
