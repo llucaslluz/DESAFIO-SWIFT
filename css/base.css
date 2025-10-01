@@ -43,6 +43,7 @@ body {
 }
 
 .topbar .logo {
+  padding: 20px 0;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -57,7 +58,7 @@ body {
   text-decoration: none;
   font-weight: 500;
   transition: 0.3s;
-  padding: 5px 10px;
+  padding: 11px 5px 5px 0;
   border-radius: 6px;
 }
 
