@@ -14,12 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
   // === Simulação da tabela Sugestao_Produto ===
   const sugestoesMap = {
     "Bife de Chorizo": [
-      { nome: "Pão de Alho Swift", preco: "R$ 12,90", img: "images/Pao de Alho.jpg" },
+      { nome: "Pão de Alho Swift", preco: "R$ 12,90", img: "images/pao_alho.jpg" },
       { nome: "Guaraná 2L", preco: "R$ 8,50", img: "images/Guarana.jpg" }
     ],
     "Picanha": [
       { nome: "Farofa Swift", preco: "R$ 9,90", img: "images/Farofa.jpg" },
-      { nome: "Cerveja Premium", preco: "R$ 6,50", img: "images/Cerveja.jpg" }
+      { nome: "Cerveja Premium", preco: "R$ 6,50", img: "images/cerveja_premium.jpg" }
     ],
     "Frango": [
       { nome: "Arroz Temperado", preco: "R$ 15,90", img: "images/Arroz.jpg" },
