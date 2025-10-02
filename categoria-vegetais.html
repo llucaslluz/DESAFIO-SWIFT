@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Swift+ | Vegetais</title>
   <link rel="icon" href="images/Id.jpg" type="image/png" />
+
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
   <!-- CSS base + CSS específico -->
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/categoria-vegetais.css" />
 </head>
+
 <body class="categoria-vegetais-page">
 
   <!-- Topbar fixa -->
-  <header class="topbar">
-    <div class="logo">Swift+</div>
-    <nav class="menu">
-      <a href="index.html">🏠 Início</a>
-      <a href="categorias.html">📂 Categorias</a>
-      <a href="pedido.html">📦 Pedido</a>
-      <a href="carrinho.html">🛍️ Carrinho</a>
-      <a href="perfil.html">👤 Perfil</a>
-      <a href="receitas.html">🍴 Receitas</a>
-      <a href="cupons.html">🎟️ Cupons</a>
-      <a href="lojas.html">📍 Lojas</a>
-      <a href="faq.html">❓ FAQ</a>
-    </nav>
+  <header class="topbar navbar navbar-expand-lg">
+    <a class="logo navbar-brand" href="#">Swift+</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <nav class="menu navbar-nav">
+        <a href="index.html" class="nav-link">🏠 Início</a>
+        <a href="categorias.html" class="nav-link">📂 Categorias</a>
+        <a href="pedido.html" class="nav-link">📦 Pedido</a>
+        <a href="carrinho.html" class="nav-link">🛍️ Carrinho</a>
+        <a href="perfil.html" class="nav-link">👤 Perfil</a>
+        <a href="receitas.html" class="nav-link">🍴 Receitas</a>
+        <a href="cupons.html" class="nav-link">🎟️ Cupons</a>
+        <a href="lojas.html" class="nav-link">📍 Lojas</a>
+        <a href="faq.html" class="nav-link">❓ FAQ</a>
+      </nav>
+    </div>
   </header>
 
   <!-- Conteúdo principal -->
   <main class="categoria-container">
-    <h1>🥦 Categoria: Vegetais</h1>
+    <h1 class="fw-bolder">🥦 Categoria: Vegetais</h1>
     <p class="subtitulo">Legumes e vegetais congelados Swift+</p>
 
     <div class="grid-produtos">
@@ -39,9 +53,13 @@
         <a href="produto-detalhe.html">
           <img src="images/brocolis.jpg" alt="Brócolis Congelado Swift">
         </a>
-        <h3>Brócolis Congelado</h3>
+        <h3 class="white-base-font">Brócolis Congelado</h3>
         <p class="preco">R$ 8,90</p>
-        <button>Adicionar ao Carrinho</button>
+        <div class="sugestao-card">
+          <div style="text-align: center;">
+            <button>Adicionar</button>
+          </div>
+        </div>
       </div>
 
       <!-- Produto 2 -->
@@ -49,9 +67,13 @@
         <a href="produto-detalhe.html">
           <img src="images/mix-legumes.jpg" alt="Mix de Legumes Swift">
         </a>
-        <h3>Mix de Legumes Swift</h3>
+        <h3 class="white-base-font">Mix de Legumes Swift</h3>
         <p class="preco">R$ 10,90</p>
-        <button>Adicionar ao Carrinho</button>
+        <div class="sugestao-card">
+          <div style="text-align: center;">
+            <button>Adicionar</button>
+          </div>
+        </div>
       </div>
 
       <!-- Produto 3 -->
@@ -59,9 +81,13 @@
         <a href="produto-detalhe.html">
           <img src="images/ervilha.jpg" alt="Ervilha Congelada Swift">
         </a>
-        <h3>Ervilha Congelada</h3>
+        <h3 class="white-base-font">Ervilha Congelada</h3>
         <p class="preco">R$ 6,90</p>
-        <button>Adicionar ao Carrinho</button>
+        <div class="sugestao-card">
+          <div style="text-align: center;">
+            <button>Adicionar</button>
+          </div>
+        </div>
       </div>
     </div>
   </main>
@@ -70,5 +96,10 @@
   <footer class="rodape">
     <p>© 2025 Swift+ Personal Shopper</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

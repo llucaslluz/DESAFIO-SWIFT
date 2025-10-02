@@ -6,6 +6,11 @@
   <title>Swift+ | Detalhe do Pedido</title>
   <link rel="icon" href="images/Id.jpg" type="image/png">
 
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
   <!-- CSS Base -->
   <link rel="stylesheet" href="css/base.css">
   <!-- CSS específico -->
@@ -18,31 +23,40 @@
 <body class="pedido-detalhe-page">
 
   <!-- Topbar fixa -->
-  <header class="topbar">
-    <div class="logo">Swift+</div>
-    <nav class="menu">
-      <a href="index.html">🏠 Início</a>
-      <a href="categorias.html">📂 Categorias</a>
-      <a href="pedido.html">📦 Pedido</a>
-      <a href="carrinho.html">🛍️ Carrinho</a>
-      <a href="perfil.html">👤 Perfil</a>
-      <a href="receitas.html">🍴 Receitas</a>
-      <a href="cupons.html">🎟️ Cupons</a>
-      <a href="lojas.html">📍 Lojas</a>
-      <a href="faq.html">❓ FAQ</a>
-    </nav>
+  <header class="topbar navbar navbar-expand-lg">
+    <a class="logo navbar-brand" href="#">Swift+</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <nav class="menu navbar-nav">
+        <a href="index.html" class="nav-link">🏠 Início</a>
+        <a href="categorias.html" class="nav-link">📂 Categorias</a>
+        <a href="pedido.html" class="nav-link">📦 Pedido</a>
+        <a href="carrinho.html" class="nav-link">🛍️ Carrinho</a>
+        <a href="perfil.html" class="nav-link">👤 Perfil</a>
+        <a href="receitas.html" class="nav-link">🍴 Receitas</a>
+        <a href="cupons.html" class="nav-link">🎟️ Cupons</a>
+        <a href="lojas.html" class="nav-link">📍 Lojas</a>
+        <a href="faq.html" class="nav-link">❓ FAQ</a>
+      </nav>
+    </div>
   </header>
+
 
   <!-- Conteúdo -->
 <main class="pedido-detalhe-container">
-  <h1>📦 Pedido #<span id="pedido-id">---</span></h1>
+  <h1 class="fw-bold">📦 Pedido #<span id="pedido-id">---</span></h1>
   <p>Data: <span id="pedido-data">--/--/----</span></p>
   <p>Status: <span id="pedido-status" class="status em-andamento">Em andamento</span></p>
 
 
     <!-- Itens do pedido -->
     <section class="itens-pedido">
-      <h2>Itens</h2>
+      <h2 class="fw-semibold">Itens</h2>
       <ul>
         <li>1x Bife de Chorizo — R$ 85,90</li>
         <li>2x Picanha Baby — R$ 239,80</li>
@@ -52,7 +66,7 @@
 
         <!-- Status do pedido -->
     <section class="status-pedido">
-      <h2>Status do Pedido</h2>
+      <h2 class="fw-semibold">Status do Pedido</h2>
       <ul class="status-steps">
         <li id="step1" class="active">Em Preparo</li>
         <li id="step2">Pronto para Retirada</li>
@@ -62,14 +76,14 @@
 
     <!-- QR Code -->
     <section class="qr-pedido">
-      <h2>QR Code para Retirada</h2>
+      <h2 class="fw-semibold">QR Code para Retirada</h2>
       <canvas id="pedido-qr"></canvas>
       <p class="qr-texto">Mostre este QR Code na loja para retirar seu pedido.</p>
     </section>
 
     <!-- Notificações -->
     <section class="notificacoes-pedido">
-      <h2>Notificações</h2>
+      <h2 class="fw-semibold">Notificações</h2>
       <ul id="notificacoes-list">
         <li>Acompanhe aqui as atualizações do seu pedido.</li>
       </ul>
@@ -78,9 +92,9 @@
 
     <!-- Totais -->
     <section class="totais">
-      <p>Subtotal: <span>R$ 344,69</span></p>
-      <p>Frete: <span>R$ 15,00</span></p>
-      <p class="total">Total: <span>R$ 359,69</span></p>
+      <p class="fw-bold">Subtotal: <span>R$ 344,69</span></p>
+      <p class="fw-semibold">Frete: <span>R$ 15,00</span></p>
+      <p class="total fw-bolder">Total: <span>R$ 359,69</span></p>
     </section>
 
     <!-- Ações -->
@@ -98,6 +112,10 @@
   <footer class="rodape">
     <p>© 2025 Swift+ Personal Shopper</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
 <script src="js/pedido-detalhe.js"></script>

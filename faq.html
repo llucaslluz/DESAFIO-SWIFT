@@ -6,6 +6,10 @@
   <title>Swift+ | FAQ</title>
   <link rel="icon" href="images/Id.jpg" type="image/png">
 
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
   <!-- CSS Base -->
   <link rel="stylesheet" href="css/base.css">
   <!-- CSS específico -->
@@ -18,48 +22,56 @@
 <body class="faq-page">
 
   <!-- Topbar fixa -->
-  <header class="topbar">
-    <div class="logo">Swift+</div>
-    <nav class="menu">
-      <a href="index.html">🏠 Início</a>
-      <a href="categorias.html">📂 Categorias</a>
-      <a href="pedido.html">📦 Pedido</a>
-      <a href="carrinho.html">🛍️ Carrinho</a>
-      <a href="perfil.html">👤 Perfil</a>
-      <a href="receitas.html">🍴 Receitas</a>
-      <a href="cupons.html">🎟️ Cupons</a>
-      <a href="lojas.html">📍 Lojas</a>
-      <a href="faq.html">❓ FAQ</a>
-    </nav>
+  <header class="topbar navbar navbar-expand-lg">
+    <a class="logo navbar-brand" href="#">Swift+</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <nav class="menu navbar-nav">
+        <a href="index.html" class="nav-link">🏠 Início</a>
+        <a href="categorias.html" class="nav-link">📂 Categorias</a>
+        <a href="pedido.html" class="nav-link">📦 Pedido</a>
+        <a href="carrinho.html" class="nav-link">🛍️ Carrinho</a>
+        <a href="perfil.html" class="nav-link">👤 Perfil</a>
+        <a href="receitas.html" class="nav-link">🍴 Receitas</a>
+        <a href="cupons.html" class="nav-link">🎟️ Cupons</a>
+        <a href="lojas.html" class="nav-link">📍 Lojas</a>
+        <a href="faq.html" class="nav-link">❓ FAQ</a>
+      </nav>
+    </div>
   </header>
 
   <!-- Conteúdo -->
 <main class="faq-container">
-  <h1>Perguntas Frequentes</h1>
+  <h1 class="fw-bolder">Perguntas Frequentes</h1>
   <p class="subtitulo">Encontre respostas rápidas para suas dúvidas</p>
 
   <div class="faq-item">
-    <h3>Como funciona o Swift+ Personal Shopper?</h3>
+    <h3 class="fw-semibold">Como funciona o Swift+ Personal Shopper?</h3>
     <p>O Swift+ permite que você compre online e retire na loja ou receba em casa com praticidade.</p>
   </div>
 
   <div class="faq-item">
-    <h3>Quais são as formas de pagamento aceitas?</h3>
+    <h3 class="fw-bolder">Quais são as formas de pagamento aceitas?</h3>
     <p>Aceitamos cartões de crédito, Pix e boleto bancário.</p>
   </div>
 
   <div class="faq-item">
-    <h3>Posso acompanhar o status do meu pedido?</h3>
+    <h3 class="fw-bolder">Posso acompanhar o status do meu pedido?</h3>
     <p>Sim, basta acessar a área <a href="pedido.html">📦 Meus Pedidos</a>.</p>
   </div>
 
   <div class="faq-item">
-    <h3>Como resgatar cupons de desconto?</h3>
+    <h3 class="fw-bolder">Como resgatar cupons de desconto?</h3>
     <p>Vá até a página <a href="cupons.html">🎟️ Cupons</a> e insira seu código de desconto.</p>
   </div>
 
   <div class="faq-item">
-    <h3>Preciso de ajuda, como entro em contato?</h3>
+    <h3 class="fw-bolder">Preciso de ajuda, como entro em contato?</h3>
     <p>Você pode enviar um e-mail para <a href="mailto:suporte@swift.com">suporte@swift.com</a> 
        ou acessar nossa <a href="#">Política de Privacidade</a>.</p>
   </div>
@@ -78,6 +90,10 @@
   <footer class="rodape">
     <p>© 2025 Swift+ Personal Shopper</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
   <!-- Botão flutuante do WhatsApp -->
 <a href="https://wa.me/55031995543311" target="_blank" class="whatsapp-float" aria-label="Falar com atendente no WhatsApp">
