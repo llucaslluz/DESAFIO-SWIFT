@@ -1,0 +1,53 @@
+/* =========================
+    Receita Picanha Page Styles
+   ========================= */
+
+.body {
+    background-color: #fff;
+}
+.receita-picanha-page .categoria-container {
+    margin-top: 100px; /* compensar topbar fixa */
+    padding: 40px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.ingredientes {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+}
+.receita-detalhes h3 {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/receita_picanha.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    padding: 60px 20px;
+    font-size: 1.2rem;
+    color: var(--primary-orange);
+}
+.categoria-container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--primary-orange);
+}
+
+.receita-detalhes button {
+    background: var(--primary-red);
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.receita-detalhes button:hover {
+    background: var(--secondary-red);
+}
