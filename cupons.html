@@ -7,12 +7,10 @@
   <link rel="icon" href="images/Id.jpg" type="image/png">
 
   <!--Bootstrap-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- CSS Base -->
   <link rel="stylesheet" href="css/base.css">
-  <!-- CSS específico -->
   <link rel="stylesheet" href="css/cupons.css">
 
   <!-- Fonte e ícones -->
@@ -21,16 +19,10 @@
 </head>
 <body class="cupons-page">
 
-  <!-- Topbar fixa -->
+  <!-- Topbar -->
   <header class="topbar navbar navbar-expand-lg">
     <a class="logo navbar-brand" href="#">Swift+</a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse">
       <nav class="menu navbar-nav">
         <a href="index.html" class="nav-link">🏠 Início</a>
         <a href="categorias.html" class="nav-link">📂 Categorias</a>
@@ -38,7 +30,7 @@
         <a href="carrinho.html" class="nav-link">🛍️ Carrinho</a>
         <a href="perfil.html" class="nav-link">👤 Perfil</a>
         <a href="receitas.html" class="nav-link">🍴 Receitas</a>
-        <a href="cupons.html" class="nav-link">🎟️ Cupons</a>
+        <a href="cupons.html" class="nav-link ativo">🎟️ Cupons</a>
         <a href="lojas.html" class="nav-link">📍 Lojas</a>
         <a href="faq.html" class="nav-link">❓ FAQ</a>
       </nav>
@@ -48,32 +40,16 @@
   <!-- Conteúdo -->
   <main class="cupons-container">
     <h1 class="fw-semibold">🎟️ Meus Cupons</h1>
-    <p class="subtitulo">Resgate códigos ou aproveite promoções ativas</p>
+    <p class="subtitulo">Adicione códigos encontrados em produtos físicos ou use os já disponíveis</p>
 
     <!-- Resgate -->
     <div class="cupom-resgate">
-      <input type="text" placeholder="Digite seu código">
-      <button>Resgatar</button>
+      <input type="text" placeholder="Digite seu código" id="codigo-cupom">
+      <button id="btn-resgatar">Resgatar</button>
     </div>
 
-    <!-- Lista de cupons -->
-    <div class="cupom-lista">
-      <div class="cupom-card">
-        <h3>10% OFF em Carnes</h3>
-        <p>Válido até: 30/10/2025</p>
-        <button>Aplicar</button>
-      </div>
-      <div class="cupom-card">
-        <h3>Frete Grátis acima de R$ 200</h3>
-        <p>Válido até: 15/11/2025</p>
-        <button>Aplicar</button>
-      </div>
-      <div class="cupom-card">
-        <h3>15% OFF em Peixes</h3>
-        <p>Válido até: 01/12/2025</p>
-        <button>Aplicar</button>
-      </div>
-    </div>
+    <!-- Lista dinâmica -->
+    <div id="lista-cupons" class="cupom-lista"></div>
   </main>
 
   <!-- Rodapé -->
@@ -81,14 +57,7 @@
     <p>© 2025 Swift+ Personal Shopper</p>
   </footer>
 
-  <!-- Botão flutuante do WhatsApp -->
-<a href="https://wa.me/55031995543311" target="_blank" class="whatsapp-float" aria-label="Falar com atendente no WhatsApp">
-  <i class="fa-brands fa-whatsapp"></i>
-</a>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+  <!-- Scripts -->
   <script src="js/cupons.js"></script>
 </body>
 </html>

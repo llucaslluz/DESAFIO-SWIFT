@@ -169,3 +169,82 @@ document.addEventListener("DOMContentLoaded", () => {
 
   atualizarResumo();
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const itensCarrinho = document.querySelector(".carrinho-itens");
+  let desconto = 0;
+
+  const cuponsValidos = {
+    "CUPOM10": 0.10,
+    "CUPOM20": 0.20,
+    "BLACKFRIDAY": 0.50
+  };
+
+  function atualizarResumo() {
+    let subtotal = 0;
+    document.querySelectorAll(".carrinho-itens .item").forEach(item => {
+      const precoTexto = item.querySelector(".preco").textContent.replace("R$", "").replace(",", ".").trim();
+      const preco = parseFloat(precoTexto) || 0;
+      const qtd = parseInt(item.querySelector("input[type='number']").value) || 1;
+      subtotal += preco * qtd;
+    });
+
+    const frete = subtotal > 0 ? 15 : 0;
+    let total = subtotal + frete;
+
+    if (desconto > 0) {
+      total = total - total * desconto;
+    }
+
+    document.querySelector(".resumo p:nth-child(2) span").textContent = `R$ ${subtotal.toFixed(2)}`;
+    document.querySelector(".resumo p:nth-child(3) span").textContent = `R$ ${frete.toFixed(2)}`;
+    document.querySelector(".resumo .total span").textContent = `R$ ${total.toFixed(2)}`;
+  }
+
+  // Aplicar cupom manual
+  const btnCupom = document.getElementById("btn-aplicar-cupom");
+  if (btnCupom) {
+    btnCupom.addEventListener("click", () => {
+      const input = document.getElementById("input-cupom");
+      const msg = document.getElementById("msg-cupom");
+      const codigo = input.value.trim().toUpperCase();
+
+      if (cuponsValidos[codigo]) {
+        desconto = cuponsValidos[codigo];
+        msg.textContent = `✅ Cupom aplicado! Desconto de ${(desconto * 100)}%.`;
+        msg.className = "cupom-msg ok";
+      } else {
+        desconto = 0;
+        msg.textContent = "❌ Cupom inválido.";
+        msg.className = "cupom-msg erro";
+      }
+
+      atualizarResumo();
+    });
+  }
+
+  // Cupom vindo da tela de Cupons
+  const cupomSalvo = JSON.parse(localStorage.getItem("swift_cupomSelecionado"));
+  if (cupomSalvo) {
+    desconto = cupomSalvo.desconto;
+    const msg = document.getElementById("msg-cupom");
+    if (msg) {
+      msg.textContent = `✅ Cupom ${cupomSalvo.codigo} aplicado automaticamente! Desconto de ${(desconto * 100)}%.`;
+      msg.className = "cupom-msg ok";
+    }
+    localStorage.removeItem("swift_cupomSelecionado");
+  }
+
+  // Eventos dos itens
+  document.querySelectorAll(".carrinho-itens input[type='number']").forEach(input => {
+    input.addEventListener("input", atualizarResumo);
+  });
+
+  document.querySelectorAll(".carrinho-itens .btn-remover").forEach(btn => {
+    btn.addEventListener("click", e => {
+      e.target.closest(".item").remove();
+      atualizarResumo();
+    });
+  });
+
+  atualizarResumo();
+});
