@@ -20,6 +20,12 @@
     color: var(--primary-orange);
 }
 
+.categoria-container h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: var(--text-light);
+}
+
 .ingredientes {
     padding: 14px 1px;
     color: var(--primary-orange);
