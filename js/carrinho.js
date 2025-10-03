@@ -248,3 +248,45 @@ document.addEventListener("DOMContentLoaded", () => {
 
   atualizarResumo();
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const itensCarrinho = document.querySelector(".carrinho-itens");
+
+  // === Carregar itens do localStorage ===
+  let carrinho = JSON.parse(localStorage.getItem("swift.carrinho")) || [];
+
+  carrinho.forEach(produto => {
+    const novoItem = document.createElement("div");
+    novoItem.className = "item";
+    novoItem.innerHTML = `
+      <img src="${produto.imagem}" alt="${produto.nome}">
+      <div class="info">
+        <h3>${produto.nome}</h3>
+        <p class="preco">${produto.preco}</p>
+        <div class="acoes">
+          <input type="number" min="1" value="${produto.quantidade}">
+          <button class="btn-remover">Remover</button>
+        </div>
+      </div>
+    `;
+
+    // Evento remover
+    novoItem.querySelector(".btn-remover").addEventListener("click", () => {
+      novoItem.remove();
+      carrinho = carrinho.filter(p => p.nome !== produto.nome);
+      localStorage.setItem("swift.carrinho", JSON.stringify(carrinho));
+      atualizarResumo();
+    });
+
+    // Alterar quantidade
+    novoItem.querySelector("input").addEventListener("input", (e) => {
+      produto.quantidade = parseInt(e.target.value) || 1;
+      localStorage.setItem("swift.carrinho", JSON.stringify(carrinho));
+      atualizarResumo();
+    });
+
+    itensCarrinho.appendChild(novoItem);
+  });
+
+  atualizarResumo(); // já recalcula o total
+});
