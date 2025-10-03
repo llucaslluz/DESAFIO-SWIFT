@@ -2,72 +2,62 @@
     Receita Picanha Page Styles
    ========================= */
 
-.receita-fundo {
+.fundo-pagina-completa {
     background-image: linear-gradient(rgba(0, 0, 0, 0.816), rgba(47, 46, 46, 0.604)), url(../images/receita_picanha.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    color: var(--text-light);
-
-    min-height: 900px;
-    text-align: center;
-    color: var(--text-light);
+    min-height: 800px;
     padding: 40px 20px;
+    padding-bottom: 580px;
     margin-top: 100px; /* compensar topbar fixa */
 
 }
-.receita-picanha-page .categoria-container {
-    text-align: center;
-}
+
 .categoria-container h1 {
     font-size: 2rem;
     margin-bottom: 10px;
     color: var(--primary-orange);
 }
 
-.receita-fundo h3 {
-    text-align: center;
+.ingredientes {
+    padding: 14px 1px;
+    color: var(--primary-orange);
+    font-weight: 400;
+}
+
+.preparo {
+    padding: 14px 1px;
+    color: var(--primary-orange);
+    text-decoration: solid;
+    font-weight: 400;
+}
+
+.bloco-conteudo-transparente {
+    text-align: left;
     width: 100%;
     height: 80%;
     border-radius: 12px;
     padding: 10px 20px;
     font-size: 1.2rem;
-    color: var(--primary-orange);
-}
-
-.ingredientes {
-    max-width: 800px;
-    margin: 0 auto;
-    background: rgba(255,255,255,0.05);
+    background: rgba(255, 255, 255, 0.132);
     border-radius: 12px;
     padding: 20px;
-    text-align: left;
+    color: var(--text-light);
 }
-
-
 
 .botao {
     background: var(--primary-red);
     color: #fff;
     border: none;
+    box-shadow: var(--primary-orange) 8px 3px 9px 2px;
     padding: 10px 16px;
     border-radius: 6px;
     cursor: pointer;
     font-weight: 600;
 }
 
-.receita-detalhes button:hover {
+.botao:hover {
     background: var(--secondary-red);
 }
 
-.subtitulo {
-    margin: 90px 30px 90px 150px;
-    font-size: 1.1rem;
-    text-align: center;
-    align-items: center;
-    color: #ccc;
-    background: rgba(255,255,255,0.05);
-    border-radius: 10px;
-    padding: 10px 2px;
-    width: 400px;
-}
