@@ -69,3 +69,12 @@
 .card-receita button:hover {
   opacity: 0.85;
 }
+
+.topbar {
+  justify-content: center !important;
+  text-align: center;
+}
+.topbar .navbar-nav {
+  margin: 0 auto;
+}
+
