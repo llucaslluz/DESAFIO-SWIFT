@@ -6,7 +6,7 @@
   --primary-red: #b30000;
   --secondary-red: #800000;
   --primary-orange: #F26522;
-  --secundary-orange: #f59c6970;
+  --secundary-orange: #f59c6968;
   --bg-light: #f9f9f9;
   --bg-dark: #2e1818;
   --text-dark: #333;
@@ -64,8 +64,10 @@ body {
 
 .topbar .menu a:hover,
 .topbar .menu a.active {
-  background: var(--primary-orange);
-  color: #fff;
+  text-decoration: underline;
+  background: var(--secundary-orange);
+  transform: translateY(-4px);
+  box-shadow: 2px 15px 20px rgba(0, 0, 0, 0.56);
 }
 
 /* Conteúdo */
@@ -152,10 +154,10 @@ body {
 /* Botao voltar/inicio */
 
 .botao {
-  background: var(--primary-red);
   color: #fff;
   border: none;
-  box-shadow: var(--primary-orange) 8px 3px 9px 2px;
+  background-color: #f98a5748;
+  box-shadow: #fa823cab 3px 4px 10px 1px;
   padding: 10px 16px;
   /* margin: 0 2px 100% 0; */
   margin: 30px 0 10px 0;
@@ -167,7 +169,8 @@ body {
 }
 
 .botao:hover {
-  background: var(--secondary-red);
+  text-decoration: underline;
+  background: var(--secundary-orange);
   transform: translateY(-4px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+  box-shadow: 2px 15px 10px 8px rgba(60, 29, 15, 0.56);
 }

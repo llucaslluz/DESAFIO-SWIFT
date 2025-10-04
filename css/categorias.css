@@ -85,9 +85,10 @@
 }
 
 .filtros-inteligentes button {
-  background: rgba(255,255,255,0.08);
   color: #fff;
   border: 1px solid rgba(255,255,255,0.2);
+  background-color: #f98a5748;
+  box-shadow: #fa823cab 3px 4px 10px 1px;
   padding: 8px 14px;
   border-radius: 20px;
   font-weight: 600;
@@ -96,7 +97,12 @@
 }
 
 .filtros-inteligentes button:hover {
-  background: rgba(255,255,255,0.2);
+  /* background: rgba(255,255,255,0.2); */
+  text-decoration: underline;
+  background: var(--secundary-orange);
+  transform: translateY(-4px);
+  box-shadow: 2px 15px 10px 10px rgba(60, 29, 15, 0.56);
+
 }
 
 .filtros-inteligentes button.ativo {
