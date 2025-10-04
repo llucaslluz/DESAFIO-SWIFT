@@ -48,16 +48,21 @@
 
 .categorias a {
   text-decoration: none;
-  padding: 8px 16px;
+  padding: 5px 8px;
   border-radius: 6px;
   color: var(--primary-red);
   font-weight: 600;
-  background-color: rgba(255, 188, 146, 0.2);
+  background-color: rgba(255, 188, 146, 0.047);
+  box-shadow: 0 6px 18px rgba(61, 34, 22, 0.798);
   transition: all 0.3s ease;
+  border: #ffffff0f solid 0.01px;
 }
 
 .categorias a:hover {
   text-decoration: underline;
+  background: var(--secundary-orange);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
 }
 
 /* Grid de produtos */
