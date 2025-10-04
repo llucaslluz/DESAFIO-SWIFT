@@ -1,5 +1,5 @@
 /* =========================
-   CATEGORIA PESCADOS
+  CATEGORIA PESCADOS
    ========================= */
 
 .categoria-pescados-page .categoria-container {
@@ -72,3 +72,5 @@
 .categoria-pescados-page .card button:hover {
   background: var(--secondary-red);
 }
+
+

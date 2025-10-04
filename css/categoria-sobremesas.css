@@ -1,5 +1,5 @@
 /* =========================
-   CATEGORIA SOBREMESAS
+  CATEGORIA SOBREMESAS
    ========================= */
 
 .categoria-sobremesas-page .categoria-container {
@@ -72,3 +72,5 @@
 .categoria-sobremesas-page .card button:hover {
   background: var(--secondary-red);
 }
+
+

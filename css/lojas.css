@@ -1,5 +1,5 @@
 /* =========================
-   LOJAS PAGE
+  LOJAS PAGE
    ========================= */
 
 .lojas-container {
@@ -72,3 +72,5 @@
 .lista-lojas li:hover {
   background: rgba(255,255,255,0.1);
 }
+
+

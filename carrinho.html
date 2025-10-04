@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,8 @@
   <link rel="icon" href="images/Id.jpg" type="image/png">
 
   <!--Bootstrap-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <!-- CSS Base -->
   <link rel="stylesheet" href="css/base.css">
   <!-- CSS específico -->
@@ -17,6 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body class="carrinho-page">
 
   <!-- Topbar fixa -->
@@ -41,96 +44,102 @@
         <a href="faq.html" class="nav-link">❓ FAQ</a>
       </nav>
     </div>
-</header>
+  </header>
 
-<!-- Conteúdo -->
-<main class="carrinho-container">
-  <h1 class="fw-bolder">🛍️ Seu Carrinho</h1>
+  <!-- Conteúdo -->
+  <main class="carrinho-container">
+    <h1 class="fw-bolder">🛍️ Seu Carrinho</h1>
 
-  <div class="carrinho-itens">
-    <!-- Item 1 -->
-    <div class="item">
-      <img src="images/Bife de Chorizo.jpg" alt="Bife de Chorizo">
-      <div class="info">
-        <h3 class="fw-semibold">Bife de Chorizo Swift Gran Reserva</h3>
-        <p class="preco">R$ 85,90 / Kg</p>
-        <div class="acoes">
-          <input type="number" min="1" value="1">
-          <button class="btn-remover">Remover</button>
+    <div class="carrinho-itens">
+      <!-- Item 1 -->
+      <div class="item">
+        <img src="images/Bife de Chorizo.jpg" alt="Bife de Chorizo">
+        <div class="info">
+          <h3 class="fw-semibold">Bife de Chorizo Swift Gran Reserva</h3>
+          <p class="preco">R$ 85,90 / Kg</p>
+          <div class="acoes">
+            <input type="number" min="1" value="1">
+            <button class="btn-remover">Remover</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="item">
+        <img src="images/Picanha Swift.jpg" alt="Picanha Swift">
+        <div class="info">
+          <h3 class="fw-semibold">Picanha Ponta (Baby) Swift Legado</h3>
+          <p class="preco ">R$ 119,90</p>
+          <div class="acoes">
+            <input type="number" min="1" value="2">
+            <button class="btn-remover">Remover</button>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Item 2 -->
-    <div class="item">
-      <img src="images/Picanha Swift.jpg" alt="Picanha Swift">
-      <div class="info">
-        <h3 class="fw-semibold">Picanha Ponta (Baby) Swift Legado</h3>
-        <p class="preco ">R$ 119,90</p>
-        <div class="acoes">
-          <input type="number" min="1" value="2">
-          <button class="btn-remover">Remover</button>
+    <!-- Resumo do Pedido logo abaixo dos produtos -->
+    <aside class="resumo">
+      <h2 class="fw-semibold">Resumo do Pedido</h2>
+      <p class="fw-semibold">Subtotal: <span>R$ 0,00</span></p>
+      <p class="fw-semibold">Frete: <span>R$ 0,00</span></p>
+      <p class="total fw-bold">Total: <span>R$ 0,00</span></p>
+
+      <!-- Cupom -->
+      <div class="cupom">
+        <input type="text" id="input-cupom" placeholder="Digite seu cupom">
+        <button id="btn-aplicar-cupom">Aplicar</button>
+        <p id="msg-cupom" class="cupom-msg"></p>
+      </div>
+
+      <button class="btn-finalizar">Finalizar Compra</button>
+    </aside>
+
+    <!-- Sugestões Inteligentes -->
+    <section class="sugestoes">
+      <h2 class="fw-semibold">Sugestões para completar seu pedido</h2>
+      <div class="sugestoes-grid">
+        <div class="sugestao-card">
+          <img src="images/pao_alho.jpg" alt="Pão de Alho">
+          <h4>Pão de Alho Swift</h4>
+          <p class="preco">R$ 12,90</p>
+          <button>Adicionar</button>
+        </div>
+        <div class="sugestao-card">
+          <img src="/images/guarana.jpg" alt="Guaraná">
+          <h4>Guaraná 2L</h4>
+          <p class="preco">R$ 8,50</p>
+          <button>Adicionar</button>
+        </div>
+        <div class="sugestao-card">
+          <img src="images/Pudim.jpg" alt="Pudim">
+          <h4>Pudim Swift</h4>
+          <p class="preco">R$ 14,90</p>
+          <button>Adicionar</button>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- Resumo do Pedido logo abaixo dos produtos -->
-  <aside class="resumo">
-    <h2 class="fw-semibold">Resumo do Pedido</h2>
-    <p class="fw-semibold">Subtotal: <span>R$ 0,00</span></p>
-    <p class="fw-semibold">Frete: <span>R$ 0,00</span></p>
-    <p class="total fw-bold">Total: <span>R$ 0,00</span></p>
+  </main>
 
-    <!-- Cupom -->
-    <div class="cupom">
-      <input type="text" id="input-cupom" placeholder="Digite seu cupom">
-      <button id="btn-aplicar-cupom">Aplicar</button>
-      <p id="msg-cupom" class="cupom-msg"></p>
-    </div>
-
-    <button class="btn-finalizar">Finalizar Compra</button>
-  </aside>
-
-  <!-- Sugestões Inteligentes -->
-  <section class="sugestoes">
-    <h2 class="fw-semibold">Sugestões para completar seu pedido</h2>
-    <div class="sugestoes-grid">
-      <div class="sugestao-card">
-        <img src="images/pao_alho.jpg" alt="Pão de Alho">
-        <h4>Pão de Alho Swift</h4>
-        <p class="preco">R$ 12,90</p>
-        <button>Adicionar</button>
-      </div>
-      <div class="sugestao-card">
-        <img src="/images/guarana.jpg" alt="Guaraná">
-        <h4>Guaraná 2L</h4>
-        <p class="preco">R$ 8,50</p>
-        <button>Adicionar</button>
-      </div>
-      <div class="sugestao-card">
-        <img src="images/Pudim.jpg" alt="Pudim">
-        <h4>Pudim Swift</h4>
-        <p class="preco">R$ 14,90</p>
-        <button>Adicionar</button>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-
+  <a href="/index.html">
+    <button class="botao">Voltar</button>
+  </a>
   <!-- Rodapé -->
   <footer class="rodape">
     <p>© 2025 Swift+ Personal Shopper</p>
   </footer>
   <!-- Botão flutuante do WhatsApp -->
-<a href="https://wa.me/55031995543311" target="_blank" class="whatsapp-float" aria-label="Falar com atendente no WhatsApp">
-  <i class="fa-brands fa-whatsapp"></i>
-</a>
+  <a href="https://wa.me/55031995543311" target="_blank" class="whatsapp-float"
+    aria-label="Falar com atendente no WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="js/carrinho.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="js/carrinho.js"></script>
 
 </body>
+
 </html>

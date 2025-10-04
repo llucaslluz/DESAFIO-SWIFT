@@ -1,5 +1,5 @@
 /* =========================
-   PERFIL PAGE
+  PERFIL PAGE
    ========================= */
 
 .perfil-container {
@@ -70,6 +70,7 @@
 .logout button {
   background: #a30000;
   color: #fff;
+  box-shadow: var(--primary-orange) 2px 1px 9px 1px;
   border: none;
   padding: 12px 20px;
   border-radius: 8px;
@@ -82,3 +83,5 @@
 .logout button:hover {
   opacity: 0.85;
 }
+
+

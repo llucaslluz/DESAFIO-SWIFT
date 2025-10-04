@@ -77,8 +77,8 @@ body {
 /* Rodapé */
 .rodape {
   text-align: center;
-  padding: 15px;
-  margin-top: 200px;
+  padding: 20px 0 33px 0;
+  margin-top: 250px;
   background: linear-gradient(#2e1818, #1a0f0f); /* fundo escuro */
   color: #fff;
   font-size: 0.9rem;
@@ -147,4 +147,27 @@ body {
 .white-base-font {
   color: #fff;
   font-weight: 600;
+}
+
+/* Botao voltar/inicio */
+
+.botao {
+  background: var(--primary-red);
+  color: #fff;
+  border: none;
+  box-shadow: var(--primary-orange) 8px 3px 9px 2px;
+  padding: 10px 16px;
+  /* margin: 0 2px 100% 0; */
+  margin: 30px 0 10px 0;
+  position: absolute;
+  left: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.botao:hover {
+  background: var(--secondary-red);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
 }

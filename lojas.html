@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +20,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body class="lojas-page">
 
   <!-- Topbar fixa -->
@@ -43,46 +45,47 @@
         <a href="faq.html" class="nav-link">❓ FAQ</a>
       </nav>
     </div>
-</header>
+  </header>
 
   <!-- Conteúdo -->
-<main class="lojas-container">
-  <h1 class="fw-bold">Nossas Lojas</h1>
-  <p class="subtitulo">Encontre a loja Swift mais próxima de você</p>
+  <main class="lojas-container">
+    <h1 class="fw-bold">Nossas Lojas</h1>
+    <p class="subtitulo">Encontre a loja Swift mais próxima de você</p>
 
-  <!-- Mapa -->
-  <div class="mapa-lojas">
-    <iframe 
-      id="mapa-frame"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.591165382855!2d-46.66232512393407!3d-23.58267376206264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59d0b9d8932f%3A0x2b1c5c5c1!2sSwift%20Moema!5e0!3m2!1spt-BR!2sbr!4v1705000000000"
-      width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
-    </iframe>
-  </div>
+    <!-- Mapa -->
+    <div class="mapa-lojas">
+      <iframe id="mapa-frame"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.591165382855!2d-46.66232512393407!3d-23.58267376206264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59d0b9d8932f%3A0x2b1c5c5c1!2sSwift%20Moema!5e0!3m2!1spt-BR!2sbr!4v1705000000000"
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
 
-  <!-- Lista de Lojas -->
-<ul class="lista-lojas">
-  <li onclick="selecionarLoja('Swift Moema')">
-    <strong>Swift Moema</strong><br>
-    Av. Ibirapuera, 1234 - São Paulo/SP<br>
-    Tel: (11) 3333-4444<br>
-    <a href="https://maps.google.com?q=Swift+Moema" target="_blank">Ver no mapa</a>
-  </li>
-  <li onclick="selecionarLoja('Swift Pinheiros')">
-    <strong>Swift Pinheiros</strong><br>
-    Rua dos Pinheiros, 567 - São Paulo/SP<br>
-    Tel: (11) 2222-3333<br>
-    <a href="https://maps.google.com?q=Swift+Pinheiros" target="_blank">Ver no mapa</a>
-  </li>
-  <li onclick="selecionarLoja('Swift Campinas')">
-    <strong>Swift Campinas</strong><br>
-    Av. Brasil, 890 - Campinas/SP<br>
-    Tel: (19) 4444-5555<br>
-    <a href="https://maps.google.com?q=Swift+Campinas" target="_blank">Ver no mapa</a>
-  </li>
-</ul>
+    <!-- Lista de Lojas -->
+    <ul class="lista-lojas">
+      <li onclick="selecionarLoja('Swift Moema')">
+        <strong>Swift Moema</strong><br>
+        Av. Ibirapuera, 1234 - São Paulo/SP<br>
+        Tel: (11) 3333-4444<br>
+        <a href="https://maps.google.com?q=Swift+Moema" target="_blank">Ver no mapa</a>
+      </li>
+      <li onclick="selecionarLoja('Swift Pinheiros')">
+        <strong>Swift Pinheiros</strong><br>
+        Rua dos Pinheiros, 567 - São Paulo/SP<br>
+        Tel: (11) 2222-3333<br>
+        <a href="https://maps.google.com?q=Swift+Pinheiros" target="_blank">Ver no mapa</a>
+      </li>
+      <li onclick="selecionarLoja('Swift Campinas')">
+        <strong>Swift Campinas</strong><br>
+        Av. Brasil, 890 - Campinas/SP<br>
+        Tel: (19) 4444-5555<br>
+        <a href="https://maps.google.com?q=Swift+Campinas" target="_blank">Ver no mapa</a>
+      </li>
+    </ul>
 
-</main>
-
+  </main>
+  <a href="/index.html">
+    <button class="botao">Inicio</button>
+  </a>
 
   <!-- Rodapé -->
   <footer class="rodape">
@@ -96,9 +99,11 @@
   <script src="js/lojas.js"></script>
 
   <!-- Botão flutuante do WhatsApp -->
-<a href="https://wa.me/55031995543311" target="_blank" class="whatsapp-float" aria-label="Falar com atendente no WhatsApp">
-  <i class="fa-brands fa-whatsapp"></i>
-</a>
+  <a href="https://wa.me/55031995543311" target="_blank" class="whatsapp-float"
+    aria-label="Falar com atendente no WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
 </body>
+
 </html>

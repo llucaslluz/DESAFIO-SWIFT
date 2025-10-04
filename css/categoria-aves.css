@@ -72,21 +72,3 @@
 .categoria-aves-page .card button:hover {
   background: var(--secondary-red);
 }
-
-.botao {
-  background: var(--primary-red);
-  color: #fff;
-  border: none;
-  box-shadow: var(--primary-orange) 8px 3px 9px 2px;
-  padding: 10px 16px;
-  margin: 0 2px 100% 0;
-  position: absolute;
-  left: 20px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: 600;
-}
-
-.botao:hover {
-  background: var(--secondary-red);
-}
