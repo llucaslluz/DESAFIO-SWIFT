@@ -1,5 +1,7 @@
 # 🛒 Swift+ Personal Shopper
 
+depois de muitos testes e muito trabalho nossa equipe conseguiu construir um bom site como base para o desafio 
+
 ## 📘 Visão Geral
 O **Swift+ Personal Shopper** é uma experiência integrada ao app/site da Swift, criada para reduzir atritos na jornada **O2O (Offline to Online)** e incentivar clientes das lojas físicas a migrarem para o digital com simplicidade, confiança e benefícios claros.
 
